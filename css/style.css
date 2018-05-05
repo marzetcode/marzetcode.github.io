@@ -1,0 +1,260 @@
+@font-face {
+  font-family: 'Graduate';
+  src: local('Graduate'),
+       url('../fonts/Graduate-Regular.ttf');
+}
+
+html, body {
+  font-family: 'Graduate';
+  font-size: 100%;
+  color: black;
+  height: 100%; /* высота области */
+  width: 100%; /* ширина области */
+  text-align: center; /* выравнивание текста по горизонтали */
+  margin: 0;
+	padding: 0;
+  border: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none; /* отменяет все эффекты, в том числе и подчеркивания у ссылок */
+  font-size: 90%;
+}
+
+h1 {
+  font-size: 200%;
+  color: black;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 2%;
+}
+
+p {
+  font-size: 90%;
+  color: white;
+}
+
+hr { /* линия */
+  background-color: black;
+  height: 1.5px;
+  width: 15%;
+  border: 0; /* граница вокруг элемента */
+}
+
+::selection { /* применяет стиль к выделенному пользователем тексту */
+  background: #ada074;
+  color: white;
+}
+
+/* start page */
+
+.start-page {
+  height: 100%;
+  background-color: gray;
+  background-size: cover;
+}
+
+.start-page h1 {
+  font-size: 200%;
+  color: white;
+  text-align: center;
+}
+
+.start-page .text {
+  border-left: 15%;
+  border-right: 15%;
+  text-align: center; /* горизонтальное выравнивание текста в пределах элемента */
+  padding-top: 10%;
+}
+
+.start-page .text .logo {
+  width: 100%;
+}
+
+.start-page hr { /* линия */
+  background-color: white;
+  height: 1px;
+  width: 20%;
+  border: 0; /* граница вокруг элемента */
+}
+
+.arrow-down { /* стрелка вниз */
+  margin-top: 20%;
+}
+
+/* menu */
+
+.menu {
+  background: white;
+  margin: 0 auto;
+  border-bottom: 2px solid #f2f2f2;
+}
+
+.menu ul {
+  width: 100%;
+  text-align: center;
+  list-style: none;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li a {
+  color: #333;
+  font-size: 110%;
+  display: block;
+  padding: 0 20px 0 20px;
+}
+
+.menu li.active a {
+  color: #ada074;
+}
+
+.menu li a:hover {
+  color: #ada074;
+}
+
+/* pages */
+
+.pages {
+  width: 100%;
+  border-left: 15%;
+  border-right: 15%;
+  background: white;
+  border-bottom: 2px solid #f2f2f2;
+}
+
+.pages p {
+  font-size: 90%;
+  text-align: justify;
+  width: 30%;
+  color: #a4a4a4;
+  margin: 0 auto 2%;
+}
+
+/* discography */
+
+.discography {
+  height: 100%;
+  background: #f3f3f3;
+  border-bottom: 2px solid #f2f2f2;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid img {
+  max-width: 100%;
+}
+
+article {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 30%;
+}
+
+clear { 
+  clear: both; 
+}
+
+/* contact */
+
+.contact {
+  width: 100%;
+  height: 50%;
+  background-color: white;
+}
+
+.contact .content {
+  width: 900px;
+  overflow: hidden;
+  margin: 60px auto 65px auto;
+}
+
+.contact .content .form {
+  width: 455px;
+  overflow: hidden;
+  height: auto;
+  float: left;
+}
+
+.contact .content .form .column {
+  width: 180px;
+  overflow: hidden;
+  height: auto;
+  float: left;
+  margin-bottom: 30px;
+}
+
+.contact .content .form .column-2 {
+  width: 210px;
+  padding-left: 60px;
+  overflow: hidden;
+  height: auto;
+  float: left;
+  margin-bottom: 30px;  
+}
+
+.contact .content .form .column-3 {
+  width: 450px;
+  overflow: hidden;
+  height: auto;
+  float: left;
+}
+
+.contact .content .contact-text {
+  width: 405px;
+  overflow: hidden;
+  height: auto;
+  float: left;
+  padding-left: 40px;
+  color: black;
+  font-size: 14px;
+}
+
+/* footer */
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background: gray;
+}
+
+.footer .logo {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.footer .menu-footer {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding-top: 30px;
+  overflow: hidden;
+}
+
+.footer .menu-footer a {
+  padding: 10px;
+  color: #a4a4a4;
+}
+
+.footer .menu-footer a:hover {
+  color: #ada074;
+}
+
+.footer .copyright {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0 50px;
+  text-align: center;
+  font-size: 90%;
+  color: #a4a4a4;
+}
