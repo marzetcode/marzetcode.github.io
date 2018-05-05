@@ -63,8 +63,6 @@ hr { /* линия */
 }
 
 .start-page .text {
-  border-left: 15%;
-  border-right: 15%;
   text-align: center; /* горизонтальное выравнивание текста в пределах элемента */
   padding-top: 10%;
 }
@@ -121,8 +119,6 @@ hr { /* линия */
 
 .pages {
   width: 100%;
-  border-left: 15%;
-  border-right: 15%;
   background: white;
   border-bottom: 2px solid #f2f2f2;
 }
