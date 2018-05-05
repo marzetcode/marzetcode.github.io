@@ -137,12 +137,15 @@ hr { /* линия */
   width: 100%;
   background: #f3f3f3;
   border-bottom: 2px solid #f2f2f2;
+  margin: 0;
 }
 
 .grid {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  padding-right: 0px;
+  justify-content: center;
 }
 
 .grid img {
@@ -152,8 +155,7 @@ hr { /* линия */
 
 article {
   padding: 1%;
-  justify-content: space-around;
-  flex-basis: 30%;
+  flex-basis: 25%;
 }
 
 clear { 
