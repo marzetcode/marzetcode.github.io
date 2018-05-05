@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'Graduate';
-  src: local('Graduate'),
-       url('../fonts/Graduate-Regular.ttf');
+  src: local('Graduate'), url('../fonts/Graduate-Regular.ttf');
 }
 
 html, body {
@@ -119,6 +118,7 @@ hr { /* линия */
 
 .pages {
   width: 100%;
+/*  height: 100%; */
   background: white;
   border-bottom: 2px solid #f2f2f2;
 }
@@ -134,23 +134,25 @@ hr { /* линия */
 /* discography */
 
 .discography {
-  height: 100%;
+  width: 100%;
   background: #f3f3f3;
   border-bottom: 2px solid #f2f2f2;
 }
 
 .grid {
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
 }
 
 .grid img {
   max-width: 100%;
+  max-height: 100%;
 }
 
 article {
-  padding: 2%;
-  flex-grow: 1;
+  padding: 1%;
+  justify-content: space-around;
   flex-basis: 30%;
 }
 
