@@ -63,7 +63,7 @@ hr { /* линия */
 
 .start-page .text {
   text-align: center; /* горизонтальное выравнивание текста в пределах элемента */
-  padding-top: 10%;
+  padding-top: 15%;
 }
 
 .start-page .text .logo {
@@ -78,32 +78,33 @@ hr { /* линия */
 }
 
 .arrow-down { /* стрелка вниз */
-  margin-top: 20%;
+  margin-top: 15%;
 }
 
 /* menu */
 
 .menu {
+  width: 100%;
   background: white;
-  margin: 0 auto;
   border-bottom: 2px solid #f2f2f2;
+  margin: 0;
 }
 
 .menu ul {
-  width: 100%;
-  text-align: center;
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .menu li {
-  display: inline-block;
+  padding: 0 4%;
 }
 
 .menu li a {
   color: #333;
   font-size: 110%;
-  display: block;
-  padding: 0 20px 0 20px;
 }
 
 .menu li.active a {
