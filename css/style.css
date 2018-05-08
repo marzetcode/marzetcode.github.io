@@ -104,7 +104,7 @@ hr { /* линия */
 
 .menu li a {
   color: #333;
-  font-size: 110%;
+  font-size: 120%;
 }
 
 .menu li.active a {
@@ -172,10 +172,11 @@ clear {
 
 .contact .content {
   width: 30%;
-  margin: 2% auto;
   font-size: 90%;
-  text-align: center;
   color: black;
+  text-align: center;
+  margin: auto;
+  padding-top: 3%;
 }
 
 /* footer */
@@ -190,7 +191,7 @@ clear {
 .footer .logo {
   width: 100%;
   margin: auto;
-  padding-top: 3%;
+  padding-top: 5%;
 }
 
 .footer .menu-footer {
@@ -216,4 +217,8 @@ clear {
   text-align: center;
   margin: 0 auto;
   padding: 3%;
+}
+
+.footer .copyright a {
+  color: #a4a4a4;
 }
