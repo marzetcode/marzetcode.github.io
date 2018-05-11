@@ -65,7 +65,7 @@ hr { /* линия */
 
 .start-page .text {
   text-align: center; /* горизонтальное выравнивание текста в пределах элемента */
-  padding-top: 15%;
+  padding-top: 10%;
 }
 
 .start-page .text .logo {
@@ -244,10 +244,6 @@ input {
 
   .contact .content {
     width: 60%;
-  }
-
-  .start-page .text {
-    padding-top: 40%;
   }
 
   h1 {
