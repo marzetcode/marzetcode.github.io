@@ -127,7 +127,7 @@ hr { /* линия */
 .pages p {
   font-size: 90%;
   text-align: justify;
-  width: 30%;
+  width: 40%;
   color: #a4a4a4;
   margin: 2% auto;
 }
@@ -219,23 +219,70 @@ clear {
   text-align: center;
   margin: 0 auto;
   padding: 3%;
+  text-decoration: none;
 }
 
 .footer .copyright a {
   color: #a4a4a4;
 }
 
-@media screen and ( max-width: 420px) {
+label {
+  display: none;
+}
+
+input {
+  display: none;
+}
+
+
+@media screen and (max-width: 769px) {
   .pages p {
     width: 60%;
   }
+
   .contact .content {
     width: 60%;
   }
+
   .start-page .text {
     padding-top: 40%;
   }
+
   h1 {
     padding-top: 5%;
   }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .xpandable-block {
+    height: 230px;
+    overflow: hidden;
+    order: 0;
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  input[type="checkbox"]:checked+.xpandable-block {
+    height: auto;
+  }
+  
+  label {
+    order: 1;
+    color: black;
+    font-size: 90%;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid #a4a4a4;
+    border-radius: 4px;
+    display: flex;
+  }
 }
+
