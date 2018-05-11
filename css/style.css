@@ -10,12 +10,12 @@ html, body {
   height: 100%; /* высота области */
   width: 100%; /* ширина области */
   text-align: center; /* выравнивание текста по горизонтали */
-	margin: 0;
+  margin: 0;
 	padding: 0;
-	border: 0;
-	overflow-x: hidden;
-	overflow-y: auto;
-	-webkit-overflow-scrolling: touch;
+  border: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 a {
@@ -55,20 +55,17 @@ hr { /* линия */
   height: 100%;
   background-color: gray;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .start-page h1 {
   font-size: 200%;
   color: white;
-  text-align: center;
 }
 
-.start-page .text {
-  text-align: center; /* горизонтальное выравнивание текста в пределах элемента */
-  padding-top: 10%;
-}
-
-.start-page .text .logo {
+.start-page .logo {
   width: 100%;
 }
 
@@ -281,6 +278,7 @@ input {
     border: 2px solid #a4a4a4;
     border-radius: 4px;
     display: flex;
-		margin-bottom: 1.5%;
+    margin-bottom: 1.5%;
   }
-} 
+}
+
