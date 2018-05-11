@@ -235,11 +235,11 @@ input {
 
 @media screen and (max-width: 769px) {
   .pages p {
-    width: 70%;
+    width: 80%;
   }
 
   .contact .content {
-    width: 70%;
+    width: 80%;
   }
 
   h1 {
