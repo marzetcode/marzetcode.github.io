@@ -3,6 +3,10 @@
   src: local('Graduate'), url('../fonts/Graduate-Regular.ttf');
 }
 
+#main {
+    -webkit-overflow-scrolling: touch;
+}
+
 html, body {
   font-family: 'Graduate';
   font-size: 100%;
