@@ -285,5 +285,6 @@ input {
     border: 2px solid #a4a4a4;
     border-radius: 4px;
     display: flex;
+		margin-bottom: 1.5%;
   }
 } 
