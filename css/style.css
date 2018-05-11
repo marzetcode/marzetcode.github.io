@@ -3,10 +3,6 @@
   src: local('Graduate'), url('../fonts/Graduate-Regular.ttf');
 }
 
-#main {
-    -webkit-overflow-scrolling: touch;
-}
-
 html, body {
   font-family: 'Graduate';
   font-size: 100%;
@@ -14,11 +10,11 @@ html, body {
   height: 100%; /* высота области */
   width: 100%; /* ширина области */
   text-align: center; /* выравнивание текста по горизонтали */
-  margin: 0;
+	margin: 0;
 	padding: 0;
   border: 0;
   overflow-x: hidden;
-	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
 }
 
 a {
