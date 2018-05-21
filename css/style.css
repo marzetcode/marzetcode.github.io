@@ -14,7 +14,7 @@ html, body {
 	padding: 0;
   border: 0;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
 
