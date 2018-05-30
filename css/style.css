@@ -157,10 +157,6 @@ article {
   flex-basis: 25%;
 }
 
-clear { 
-  clear: both; 
-}
-
 /* contact */
 
 .contact {
@@ -232,6 +228,7 @@ label {
 input {
   display: none;
 }
+
 
 @media screen and (max-width: 769px) {
   .pages p {
