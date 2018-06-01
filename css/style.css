@@ -307,5 +307,9 @@ input {
     display: flex;
     margin-bottom: 1.5%;
   }
+	
+	.middle {
+    display: none;
+  }
 }
 
