@@ -175,7 +175,7 @@ hr { /* линия */
   border-top: 1px solid  white;
 }
 
-.container:hover .image {
+.container:hover img {
   opacity: 0.3;
 }
 
