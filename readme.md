@@ -1,4 +1,3 @@
-# Hello! This is my portfolio website.
+Hi! My name is Marzet and this is my studying/practicing website
 
-stairwaytohell.github.io
-bandpage
+Check out my portfolio https://marzetkhatit.github.io/
