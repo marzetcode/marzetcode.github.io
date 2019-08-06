@@ -75,10 +75,10 @@ footer img {
   max-width: 30px;
 }
 
-footer a {
+/*footer a {
   text-decoration: none;
   color: #d3aa0c;
-}
+}*/
 
 body::-webkit-scrollbar {
   /*кастомный скроллбар*/
