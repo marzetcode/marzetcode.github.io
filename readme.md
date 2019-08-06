@@ -1,3 +1,3 @@
-Hi! My name is Marzet and this is my studying/practicing page
+Hi! My name is Marzet and this is my portfolio page and main GitHub account 
 
-Check out my portfolio https://marzetkhatit.github.io/
+Check out my GitHub Pages for fun and practicing https://marzetkhatit.github.io/
