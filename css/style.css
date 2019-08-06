@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Graduate";
+  src: local("Graduate"), url("../fonts/Graduate-Regular.ttf"); /*by instagram.com/nino4ek9594*/
+}
+
+html,
+body {
+  font-family: "Graduate";
+  font-size: 100%;
+  background-color: #d3aa0c;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.cover {
+  background-image: url("../img/main.jpg");
+  width: 100%;
+  height: 1080px;
+  background-size: 1920px 1080px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+h1 {
+  margin: 0;
+  padding-left: 20%;
+  color: white;
+  font-size: 300%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-block {
+  width: 35%;
+  height: 35%;
+  border: 4px solid #1d0933;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  height: 50%;
+  background-color: #1d0933;
+  color: #d3aa0c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icons img {
+  max-width: 30px;
+}
+
+body::-webkit-scrollbar {
+  /*кастомный скроллбар*/
+  width: 1em;
+}
+
+body::-webkit-scrollbar-thumb {
+  /*цввет скроллбара*/
+  background: white;
+}
