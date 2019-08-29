@@ -86,7 +86,7 @@ body::-webkit-scrollbar-thumb {
 	background: white;
 }
 
-@media screen and (max-width: 601px) {
+@media screen and (max-width: 600px) {
 	.cover {
 		background-image: url("../img/main-600.png");
 		background-size: 600px 100%;
