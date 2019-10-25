@@ -1,3 +1,1 @@
-Hi! My name is Marzet and this is my portfolio page and main GitHub account 
-
-Check out my GitHub Pages for fun and practicing https://marzetkhatit.github.io/
+Hi! My name is Marzet. I'm a frontend developer and this is my portfolio page.
