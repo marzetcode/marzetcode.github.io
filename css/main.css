@@ -55,7 +55,7 @@ main {
 	font-size: 200%;
 	margin: 0;
 	border: 0;
-	padding: 0;
+	padding: 10% 0 0 0;
 	color: white;
 	display: flex;
 	justify-content: space-around;
