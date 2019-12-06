@@ -11,20 +11,14 @@
 		body {
 			background-color: grey;
 		}
-
-		h1 {
-			color: green;
-		}
-
-		h3 {
-			color: red;
-		}
 	</style>
+
 	<script>
 		function randomBackground() {
-			// Array containing colors 
-			let colors = ['#dc6900', '#eb8c00', '#e0301e', '#a32020', '#602320', '#740001', '#560e07', '#400303', '#220000', '#000000', '#670067', '#004c7d', '#2a6546', '#007ac9', '#006bb0', '#4c7d00', '#7ac900'];
-			// selecting random color 
+			// array of colors 
+			let colors = ['#dc6900', '#eb8c00', '#e0301e', '#a32020', '#602320', '#740001', '#560e07', '#400303', '#220000',
+				'#000000', '#670067', '#004c7d', '#2a6546', '#007ac9', '#006bb0', '#4c7d00', '#7ac900'];
+			// random color 
 			document.body.style.background = colors[Math.floor(Math.random() * colors.length)];
 		}
 		randomBackground();
