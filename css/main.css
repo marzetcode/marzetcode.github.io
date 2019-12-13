@@ -6,15 +6,21 @@
 html,
 body {
 	font-family: "Graduate";
-	font-size: 100%;
 	background-color: #d3aa0c;
 	text-decoration: none;
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	margin: 0;
 	border: 0;
 	padding: 0;
 	cursor: url(../img/cursor.png), auto;
+	overflow-x: hidden;
+}
+
+::selection {
+	/* применяет стиль к выделенному пользователем тексту */
+	background: white;
+	color: #1d0933;
 }
 
 a {
@@ -24,35 +30,24 @@ a {
 }
 
 .cover {
-	background-image: url("../img/main-1920.png");
-	width: 100%;
-	height: 1000px;
-	background-size: 1920px 100%;
+	background-image: url("../img/main-1920px.png");
+	width: 100vw;
+	height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	transition: 1s;
+	font-size: 3vw;
 }
 
 h1 {
 	margin: 0;
 	padding-left: 20%;
 	color: white;
-	font-size: 300%;
-}
-
-.main-title {
-	display: flex;
-	text-align: center;
-	justify-content: center;
-	color: white;
-	font-size: 150%;
 }
 
 main {
-	width: 100%;
-	height: 100%;
-	font-size: 200%;
+	width: 100vw;
+	height: 100vh;
 	margin: 0;
 	border: 0;
 	padding: 10% 0 0 0;
@@ -61,11 +56,12 @@ main {
 	justify-content: space-around;
 	text-align: center;
 	flex-wrap: wrap;
+	font-size: 2vw;
 }
 
 .main-block {
-	width: 35%;
-	height: 35%;
+	width: 35vw;
+	height: 35vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -76,7 +72,7 @@ main {
 }
 
 footer {
-	height: 50%;
+	height: 50vh;
 	background-color: #1d0933;
 	color: #d3aa0c;
 	display: flex;
@@ -84,6 +80,7 @@ footer {
 	align-items: center;
 	flex-direction: column;
 	text-align: center;
+	font-size: 2vw;
 }
 
 footer img {
@@ -100,42 +97,51 @@ body::-webkit-scrollbar-thumb {
 	background: white;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 980px) {
+
 	.cover {
-		background-image: url("../img/main-600.png");
-		background-size: 600px 100%;
-		height: 100%;
+		background-image: url("../img/main-980px.png");
 	}
 
 	main {
-		font-size: 100%;
-		padding: 3%;
+		font-size: 3vw;
 	}
 
 	footer {
-		height: 100%;
+		height: 100vh;
+		font-size: 3vw;
 	}
 }
 
-@media screen and (max-width: 320px) {
-	h1 {
-		margin: 0;
-		padding-left: 10%;
-		font-size: 200%;
-	}
+@media screen and (max-width: 736px) {
 
 	.cover {
-		background-image: url("../img/main-320.png");
-		background-size: 320px 100%;
-		height: 100%;
-	}
-
-	main {
-		font-size: 70%;
-		padding: 3%;
+		background-image: url("../img/main-736px.png");
 	}
 
 	footer {
-		height: 100%;
+		height: 100vh;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	h1 {
+		margin: 0;
+		padding-left: 10%;
+	}
+
+	.cover {
+		background-image: url("../img/main-480px.png");
+		font-size: 5vw;
+	}
+
+	main {
+		font-size: 4vw;
+	}
+
+	footer {
+		height: 100vh;
+		font-size: 4vw;
 	}
 }
