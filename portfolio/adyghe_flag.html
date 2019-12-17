@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>флаг</title>
+	<style>
+		body {
+			background-color: #006633;
+		}
+
+		/* 		#canvas {
+			background-color: #006633;
+		} */
+	</style>
+</head>
+
+<body onload="flag();">
+	<canvas id="canvas" width="500" height="500"></canvas>
+	<script>
+		function flag() {
+			let canvas = document.getElementById("canvas");
+			let context = canvas.getContext("2d");
+			context.beginPath();
+			context.moveTo(213, 250);
+			context.lineTo(285, 321);
+			context.lineTo(293, 321);
+			context.lineTo(306, 334);
+			context.lineTo(296, 335);
+			context.lineTo(295, 345);
+			context.lineTo(282, 332);
+			context.lineTo(282, 324);
+			context.lineTo(210, 253);
+			context.lineTo(202, 253);
+			context.lineTo(195, 235);
+			context.lineTo(213, 242);
+			context.moveTo(213, 250);
+			context.lineWidth = 1;
+			context.fillStyle = "#FFF70E";
+			context.fill();
+
+		}
+	</script>
+</body>
+
+</html>
