@@ -111,6 +111,10 @@ body::-webkit-scrollbar-thumb {
 		font-size: 3vw;
 	}
 
+	.main-block {
+		height: 35vw;
+	}
+
 	footer {
 		height: 100vh;
 		font-size: 3vw;
