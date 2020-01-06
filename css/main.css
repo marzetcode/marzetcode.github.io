@@ -153,3 +153,25 @@ body::-webkit-scrollbar-thumb {
 		font-size: 4vw;
 	}
 }
+
+@media screen and (max-width: 320px) {
+
+	h1 {
+		margin: 0;
+		padding-left: 10%;
+	}
+
+	header {
+		background-image: url("../img/main-320px.png");
+		font-size: 5vw;
+	}
+
+	main {
+		font-size: 4vw;
+	}
+
+	footer {
+		height: 100vh;
+		font-size: 4vw;
+	}
+}
