@@ -48,9 +48,16 @@
 			<br> hosted with &#9825; by <a href="https://pages.github.com/" target="_blank">GitHub</a>
 		</div>
 	</footer>
-	
-	<script src="js/main.js"></script>
-	<script src="js/metrika.js"></script>
+
+	<script>
+		const parallax = document.getElementById("parallax");
+		window.addEventListener("scroll", function () {
+			let offset = window.pageYOffset;
+			console.log("offset: " + offset);
+			parallax.style.backgroundPositionY = offset * 0.8 + "px"
+		});
+	</script>
+	<!-- <script src="js/metrika.js"></script> -->
 </body>
 
 </html>

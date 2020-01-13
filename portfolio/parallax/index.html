@@ -21,7 +21,14 @@
 			<h2>Div 3</h2>
 		</div>
 	</section>
-	<script src="main.js"></script>
+	<script>
+		const parallax = document.getElementById("parallax");
+		window.addEventListener("scroll", function () {
+			let offset = window.pageYOffset;
+			console.log("offset: " + offset);
+			parallax.style.backgroundPositionY = offset * 0.8 + "px"
+		});
+	</script>
 </body>
 
 </html>
