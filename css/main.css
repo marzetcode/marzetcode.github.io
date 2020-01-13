@@ -87,6 +87,7 @@ footer {
 	flex-direction: column;
 	text-align: center;
 	font-size: 1.3vw;
+	background-attachment: fixed;
 }
 
 footer img {
