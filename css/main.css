@@ -112,7 +112,6 @@ body::-webkit-scrollbar-thumb {
 	}
 
 	main {
-		height: 100vh;
 		font-size: 3vw;
 	}
 
@@ -133,10 +132,6 @@ body::-webkit-scrollbar-thumb {
 		background-size: cover;
 	}
 
-	main {
-		height: 100vh;
-	}
-
 	footer {
 		height: 100vh;
 	}
@@ -155,7 +150,6 @@ body::-webkit-scrollbar-thumb {
 	}
 
 	main {
-		height: 100vh;
 		font-size: 4vw;
 	}
 
@@ -178,7 +172,6 @@ body::-webkit-scrollbar-thumb {
 	}
 
 	main {
-		height: 100vh;
 		font-size: 4vw;
 	}
 
