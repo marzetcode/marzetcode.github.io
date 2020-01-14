@@ -8,7 +8,7 @@ body {
 	font-family: "Graduate";
 	background-color: #d3aa0c;
 	text-decoration: none;
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
 	margin: 0;
 	border: 0;
@@ -19,8 +19,8 @@ body {
 	box-sizing: border-box;
 }
 
-::selection {
 	/* применяет стиль к выделенному пользователем тексту */
+::selection {
 	background: white;
 	color: #1d0933;
 }
@@ -32,9 +32,9 @@ a {
 }
 
 header {
-	background-image: url("../img/main-1920px.png");
+	background-image: url("../img/main-1900px.png");
 	background-size: cover;
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
 	display: flex;
 	align-items: center;
