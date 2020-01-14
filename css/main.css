@@ -78,6 +78,9 @@ section {
 }
 
 footer {
+	/* background-image: url("../img/footer.png");
+	background-size: cover;
+	background-attachment: fixed; */
 	height: 50vh;
 	background-color: #1d0933;
 	color: #d3aa0c;
@@ -87,7 +90,6 @@ footer {
 	flex-direction: column;
 	text-align: center;
 	font-size: 1.3vw;
-	background-attachment: fixed;
 }
 
 footer img {
