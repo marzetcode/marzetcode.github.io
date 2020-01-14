@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>random background</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="../../img/favicon.png">
+	<link rel="apple-touch-icon" href="../../img/favicon.png">
+	<link rel="shortcut icon" type="image/png" href="../../img/favicon.png">
+</head>
+
+<body onclick="randomBackground()">
+	<style>
+		body {
+			background: grey;
+		}
+	</style>
+
+	<script>
+		function randomBackground() {
+			// array of colors 
+			let colors = ['#dc6900', '#eb8c00', '#e0301e', '#a32020', '#602320', '#740001', '#560e07', '#400303', '#220000',
+				'#000000', '#670067', '#004c7d', '#2a6546', '#007ac9', '#006bb0', '#4c7d00', '#7ac900'];
+			// random color 
+			document.body.style.background = colors[Math.floor(Math.random() * colors.length)];
+		}
+		randomBackground();
+	</script>
+</body>
+
+</html>
