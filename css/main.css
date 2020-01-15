@@ -26,11 +26,12 @@ body {
 body::-webkit-scrollbar {
 	width: 1vw;
 }
+
 body::-webkit-scrollbar-thumb {
 	background: white;
 }
 
-	/* применяет стиль к выделенному пользователем тексту */
+/* применяет стиль к выделенному пользователем тексту */
 ::selection {
 	background: white;
 	color: #1d0933;
