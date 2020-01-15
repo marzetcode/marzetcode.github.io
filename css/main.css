@@ -17,6 +17,17 @@ body {
 	/* overflow-x: hidden; doesn't work with window.pageYOffset*/
 	font-size: 2vw;
 	box-sizing: border-box;
+	/* кастомный скроллбар для мозилы*/
+	scrollbar-width: thin;
+	scrollbar-color: #d3aa0c white;
+}
+
+/*кастомный скроллбар*/
+body::-webkit-scrollbar {
+	width: 1vw;
+}
+body::-webkit-scrollbar-thumb {
+	background: white;
 }
 
 	/* применяет стиль к выделенному пользователем тексту */
@@ -94,15 +105,6 @@ footer {
 
 footer img {
 	max-width: 30px;
-}
-
-/*кастомный скроллбар*/
-body::-webkit-scrollbar {
-	width: 1vw;
-}
-
-body::-webkit-scrollbar-thumb {
-	background: white;
 }
 
 @media screen and (max-width: 980px) {
