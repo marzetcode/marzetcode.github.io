@@ -8,7 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 
-/* function functionName() {
+//hidden horizontal scrollbar because css overflow-x: hidden doesn't work with window.pageYOffset
+document.documentElement.style.overflowX = 'hidden';
+
+
+function functionName() {
 	console.log("Hello World");
 }
-functionName(); */
+functionName();
