@@ -17,12 +17,12 @@ body {
 	/* overflow-x: hidden; doesn't work with window.pageYOffset*/
 	font-size: 2vw;
 	box-sizing: border-box;
-	/* кастомный скроллбар для мозилы*/
+	/* custom scroll bar for firefox*/
 	scrollbar-width: thin;
 	scrollbar-color: #d3aa0c white;
 }
 
-/*кастомный скроллбар*/
+/*custom scroll bar*/
 body::-webkit-scrollbar {
 	width: 1vw;
 }
@@ -31,7 +31,7 @@ body::-webkit-scrollbar-thumb {
 	background: white;
 }
 
-/* применяет стиль к выделенному пользователем тексту */
+/* style for selected text*/
 ::selection {
 	background: white;
 	color: #1d0933;
