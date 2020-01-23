@@ -58,9 +58,9 @@ h1 {
 	padding-left: 20%;
 	color: white;
 	opacity: 0;
-	animation: show 5s 1;
+	animation: show 10s 1;
 	animation-fill-mode: forwards;
-	-webkit-animation: show 5s 1;
+	-webkit-animation: show 10s 1;
 	-webkit-animation-fill-mode: forwards;
 }
 
