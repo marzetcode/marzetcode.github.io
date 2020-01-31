@@ -1,6 +1,6 @@
 //parallax for header
 const parallax = document.getElementById("parallax");
-console.log(parallax.style);
+// console.log(parallax.style);
 document.addEventListener("DOMContentLoaded", function () {
 	window.addEventListener("scroll", function () {
 		let offset = window.pageYOffset;
@@ -12,6 +12,19 @@ document.addEventListener("DOMContentLoaded", function () {
 document.documentElement.style.overflowX = 'hidden';
 
 
+const mainblockfade = document.getElementsByClassName("main-block");
+console.log(mainblockfade.style);
+document.addEventListener("DOMContentLoaded", function() {
+	window.addEventListener("scroll", function () {
+		let mainblockY = window.pageYOffset;
+		console.log(mainblockY);
+		if (mainblockY = 200) {
+			mainblockfade.classList.add("animated", "fadeIn");
+		};
+	});
+})
+
+//hello world
 function functionName() {
 	console.log("Hello World");
 }
