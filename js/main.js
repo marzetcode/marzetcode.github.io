@@ -14,19 +14,20 @@ document.documentElement.style.overflowX = 'hidden';
 
 
 const mainblockfade = document.getElementsByClassName("main-block");
-
 console.log(mainblockfade[0].style);
 document.addEventListener("DOMContentLoaded", function () {
 	window.addEventListener("scroll", function () {
-		let h = 200;
+		let h = 300;
+		let mainblockY = window.pageYOffset;
+		console.log(mainblockY);
 		for (let i = 0; i < mainblockfade.length; i++) {
-			let mainblockY = window.pageYOffset;
-			console.log(mainblockY);
-			if (mainblockY = h) {
+			console.log(mainblockfade[i]);
+			if (mainblockY == h) {
 				mainblockfade[i].classList.add("animated", "fadeIn");
-				h = h + 400;
 			};
-
+			if (i % 2 == 0) {
+				h = h + 400;
+			}
 		};
 	});
 })
