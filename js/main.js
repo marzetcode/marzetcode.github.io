@@ -8,18 +8,25 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 
+
 //hidden horizontal scrollbar because css overflow-x: hidden doesn't work with window.pageYOffset
 document.documentElement.style.overflowX = 'hidden';
 
 
 const mainblockfade = document.getElementsByClassName("main-block");
-console.log(mainblockfade.style);
-document.addEventListener("DOMContentLoaded", function() {
+
+console.log(mainblockfade[0].style);
+document.addEventListener("DOMContentLoaded", function () {
 	window.addEventListener("scroll", function () {
-		let mainblockY = window.pageYOffset;
-		console.log(mainblockY);
-		if (mainblockY = 200) {
-			mainblockfade.classList.add("animated", "fadeIn");
+		let h = 200;
+		for (let i = 0; i < mainblockfade.length; i++) {
+			let mainblockY = window.pageYOffset;
+			console.log(mainblockY);
+			if (mainblockY = h) {
+				mainblockfade[i].classList.add("animated", "fadeIn");
+				h = h + 400;
+			};
+
 		};
 	});
 })
