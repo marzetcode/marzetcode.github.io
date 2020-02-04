@@ -15,7 +15,9 @@ document.documentElement.style.overflowX = 'hidden';
 
 //fade in by scroll
 const blockrowfade = document.getElementsByClassName("blockrow");
+let browserH = document.documentElement.clientHeight;
 console.log(blockrowfade[0].style);
+console.log(browserH);
 document.addEventListener("DOMContentLoaded", function () {
 	window.addEventListener("scroll", function () {
 		let h = 300;
