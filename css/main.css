@@ -91,6 +91,11 @@ section {
 	flex-wrap: wrap;
 }
 
+.blockrow {
+	display: flex;
+	opacity: 0;
+}
+
 .main-block {
 	width: 35vw;
 	height: 40vh;
@@ -102,7 +107,6 @@ section {
 	box-shadow: 0px 0px 20px 10px #1d0933;
 	-webkit-box-shadow: 0px 0px 20px 10px #1d0933;
 	-moz-box-shadow: 0px 0px 20px 10px #1d0933;
-	opacity: 0;
 }
 
 .main-block:hover {

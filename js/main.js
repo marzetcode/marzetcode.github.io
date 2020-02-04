@@ -13,21 +13,19 @@ document.addEventListener("DOMContentLoaded", function () {
 document.documentElement.style.overflowX = 'hidden';
 
 
-const mainblockfade = document.getElementsByClassName("main-block");
-console.log(mainblockfade[0].style);
+//fade in by scroll
+const blockrowfade = document.getElementsByClassName("blockrow");
+console.log(blockrowfade[0].style);
 document.addEventListener("DOMContentLoaded", function () {
 	window.addEventListener("scroll", function () {
 		let h = 300;
-		let mainblockY = window.pageYOffset;
-		console.log(mainblockY);
-		for (let i = 0; i < mainblockfade.length; i++) {
-			console.log(mainblockfade[i]);
-			if (mainblockY == h) {
-				mainblockfade[i].classList.add("animated", "fadeIn");
+		let blockrowY = window.pageYOffset;
+		console.log(blockrowY);
+		for (let i = 0; i < blockrowfade.length; i++) {
+			if (blockrowY == h) {
+				blockrowfade[i].classList.add("animated", "fadeIn");
 			};
-			if (i % 2 == 0) {
-				h = h + 400;
-			}
+			h = h + 400;
 		};
 	});
 })
