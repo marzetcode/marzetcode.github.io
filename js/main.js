@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		let blockrowY = window.pageYOffset;
 		console.log(blockrowY);
 		for (let i = 0; i < blockrowfade.length; i++) {
-			if (blockrowY == h) {
+			if ((blockrowY < h) && (blockrowY > h - 50)) {
 				blockrowfade[i].classList.add("animated", "fadeIn");
 			};
 			h = h + 400;
