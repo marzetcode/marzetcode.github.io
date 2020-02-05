@@ -23,7 +23,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		let h = 300;
 		let blockrowY = window.pageYOffset;
 		console.log(blockrowY);
-		if (browserH < 700) {
+// если высота окна браузера меньше 700 или если страница перезагружена 
+		if ((browserH < 700) || (event.currentTarget.performance.navigation.type == 1)){
 			for (let i = 0; i < blockrowfade.length; i++) {
 				blockrowfade[i].classList.add('animated', 'fadeIn');
 			};
