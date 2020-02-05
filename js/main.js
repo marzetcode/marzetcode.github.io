@@ -17,18 +17,23 @@ document.documentElement.style.overflowX = 'hidden';
 const blockrowfade = document.getElementsByClassName("blockrow");
 let browserH = document.documentElement.clientHeight;
 console.log(blockrowfade[0].style);
-console.log(browserH);
+console.log("clientHeight: ", browserH);
 document.addEventListener("DOMContentLoaded", function () {
 	window.addEventListener("scroll", function () {
 		let h = 300;
 		let blockrowY = window.pageYOffset;
 		console.log(blockrowY);
-		for (let i = 0; i < blockrowfade.length; i++) {
-			if ((blockrowY < h) && (blockrowY > h - 50)) {
+		if (browserH < 650) {
+			for (let i = 0; i < blockrowfade.length; i++) {
 				blockrowfade[i].classList.add("animated", "fadeIn");
 			};
-			h = h + 400;
-		};
+		} else
+			for (let i = 0; i < blockrowfade.length; i++) {
+				if ((blockrowY < h) && (blockrowY > h - 50)) {
+					blockrowfade[i].classList.add("animated", "fadeIn");
+				};
+				h = h + 400;
+			};
 	});
 })
 
