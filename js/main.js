@@ -1,10 +1,10 @@
 //parallax for header
-const parallax = document.getElementById("parallax");
+const parallax = document.getElementById('parallax');
 // console.log(parallax.style);
-document.addEventListener("DOMContentLoaded", function () {
-	window.addEventListener("scroll", function () {
+document.addEventListener('DOMContentLoaded', function () {
+	window.addEventListener('scroll', function () {
 		let offset = window.pageYOffset;
-		parallax.style.backgroundPositionY = offset * 0.8 + "px";
+		parallax.style.backgroundPositionY = offset * 0.8 + 'px';
 	});
 });
 
@@ -14,23 +14,23 @@ document.documentElement.style.overflowX = 'hidden';
 
 
 //fade in by scroll
-const blockrowfade = document.getElementsByClassName("blockrow");
+const blockrowfade = document.getElementsByClassName('blockrow');
 let browserH = document.documentElement.clientHeight;
 console.log(blockrowfade[0].style);
-console.log("clientHeight: ", browserH);
-document.addEventListener("DOMContentLoaded", function () {
-	window.addEventListener("scroll", function () {
+console.log('clientHeight: ', browserH);
+document.addEventListener('DOMContentLoaded', function () {
+	window.addEventListener('scroll', function () {
 		let h = 300;
 		let blockrowY = window.pageYOffset;
 		console.log(blockrowY);
 		if (browserH < 650) {
 			for (let i = 0; i < blockrowfade.length; i++) {
-				blockrowfade[i].classList.add("animated", "fadeIn");
+				blockrowfade[i].classList.add('animated', 'fadeIn');
 			};
 		} else
 			for (let i = 0; i < blockrowfade.length; i++) {
 				if ((blockrowY < h) && (blockrowY > h - 50)) {
-					blockrowfade[i].classList.add("animated", "fadeIn");
+					blockrowfade[i].classList.add('animated', 'fadeIn');
 				};
 				h = h + 400;
 			};
@@ -39,6 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //hello world
 function functionName() {
-	console.log("Hello World");
+	console.log('Hello World');
 }
 functionName();
