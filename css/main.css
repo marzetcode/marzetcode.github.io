@@ -20,6 +20,7 @@ body {
 	/* custom scroll bar for firefox*/
 	scrollbar-width: thin;
 	scrollbar-color: #d3aa0c white;
+	scroll-behavior: smooth;
 }
 
 /*custom scroll bar*/
@@ -39,7 +40,6 @@ body::-webkit-scrollbar-thumb {
 
 a {
 	text-decoration: none;
-	color: #d3aa0c;
 	cursor: url(../img/cursor-hover.png), auto;
 }
 
@@ -50,7 +50,36 @@ header {
 	height: 100vh;
 	display: flex;
 	align-items: center;
-	justify-content: flex-start;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.menu {
+	display: flex;
+	writing-mode: vertical-rl;
+	padding-right: 2%;
+	opacity: 0;
+	animation: show 10s 1;
+	animation-fill-mode: forwards;
+	-webkit-animation: show 10s 1;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.menu a {
+	color: white;
+	padding: 5%;
+}
+
+.menu ul {
+	height: 100vh;
+	font-size: 1.5vw;
+	display: flex;
+	justify-content: space-evenly;
+	list-style: none;
+}
+
+.menu li :hover {
+	background: #1d0933;
 }
 
 h1 {
@@ -127,6 +156,10 @@ footer {
 	flex-direction: column;
 	text-align: center;
 	font-size: 1.3vw;
+}
+
+footer a {
+	color: #d3aa0c;
 }
 
 footer img {
