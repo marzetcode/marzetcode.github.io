@@ -70,7 +70,7 @@ header {
 	padding: 5%;
 }
 
-.menu ul {
+ul {
 	height: 100vh;
 	font-size: 1.5vw;
 	display: flex;
@@ -78,7 +78,7 @@ header {
 	list-style: none;
 }
 
-.menu li :hover {
+li :hover {
 	background: #1d0933;
 }
 
@@ -198,6 +198,10 @@ footer img {
 	header {
 		background-image: url("../img/main-736px.png");
 		background-size: cover;
+	}
+
+	.menu ul {
+		font-size: 4vw;
 	}
 
 	footer {
