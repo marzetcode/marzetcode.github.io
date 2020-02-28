@@ -54,9 +54,13 @@ header {
 	flex-direction: row;
 }
 
-.menu {
+ul {
+	height: 100vh;
 	display: flex;
+	justify-content: space-evenly;
 	writing-mode: vertical-rl;
+	font-size: 1.5vw;
+	list-style: none;
 	padding-right: 2%;
 	opacity: 0;
 	animation: show 10s 1;
@@ -65,17 +69,9 @@ header {
 	-webkit-animation-fill-mode: forwards;
 }
 
-.menu a {
+ul a {
 	color: white;
 	padding: 5%;
-}
-
-ul {
-	height: 100vh;
-	font-size: 1.5vw;
-	display: flex;
-	justify-content: space-evenly;
-	list-style: none;
 }
 
 li :hover {
@@ -200,7 +196,7 @@ footer img {
 		background-size: cover;
 	}
 
-	.menu ul {
+	ul {
 		font-size: 4vw;
 	}
 
