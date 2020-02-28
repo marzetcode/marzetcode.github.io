@@ -80,7 +80,7 @@ li :hover {
 
 h1 {
 	margin: 0;
-	padding-left: 20%;
+	padding-left: 10%;
 	color: white;
 	opacity: 0;
 	animation: show 10s 1;
