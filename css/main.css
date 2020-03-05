@@ -17,11 +17,12 @@ body {
 	/* overflow-x: hidden; doesn't work with window.pageYOffset*/
 	font-size: 2vw;
 	box-sizing: border-box;
-	scroll-behavior: smooth;
-	-webkit-overflow-scrolling: touch;
 	/* custom scroll bar for firefox*/
 	scrollbar-width: thin;
 	scrollbar-color: #d3aa0c white;
+	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
+
 }
 
 /*custom scroll bar*/
@@ -118,7 +119,7 @@ section {
 	flex-wrap: wrap;
 }
 
-.block-row {
+.blockrow {
 	display: flex;
 	opacity: 0;
 }
