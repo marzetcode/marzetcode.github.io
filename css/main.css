@@ -21,6 +21,8 @@ body {
 	scrollbar-width: thin;
 	scrollbar-color: #d3aa0c white;
 	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
+
 }
 
 /*custom scroll bar*/
@@ -117,7 +119,7 @@ section {
 	flex-wrap: wrap;
 }
 
-.blockrow {
+.block-row {
 	display: flex;
 	opacity: 0;
 }
