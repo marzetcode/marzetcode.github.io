@@ -235,3 +235,28 @@ footer img {
 		background-image: url("../img/main-320px.png");
 	}
 }
+
+@media print {
+	@page {
+		margin: 1cm;
+	}
+
+	html,
+	body {
+		background: #d3aa0c;
+	}
+
+	header {
+		background-image: none;
+	}
+
+	.main-block {
+		height: 40vw;
+	}
+
+	footer {
+		height: 50vh;
+		break-inside: avoid;
+	}
+
+}
