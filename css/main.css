@@ -247,8 +247,13 @@ footer img {
 	}
 
 	header {
-		height: 50vh;
 		background-image: none;
+		background: #d3aa0c;
+	}
+
+	ul {
+		font-size: 3vw;
+		opacity: 1;
 	}
 
 	.blockrow {
