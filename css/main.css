@@ -247,11 +247,17 @@ footer img {
 	}
 
 	header {
+		height: 50vh;
 		background-image: none;
+	}
+
+	.blockrow {
+		break-inside: avoid;
 	}
 
 	.main-block {
 		height: 40vw;
+		break-inside: avoid;
 	}
 
 	footer {
