@@ -1,0 +1,106 @@
+@font-face {
+	font-family: "Open Sans Bold";
+	src: local("Open Sans Bold"), url("../fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+	font-family: "Open Sans Light";
+	src: local("Open Sans Light"), url("../fonts/OpenSans-Light.ttf");
+}
+
+@font-face {
+	font-family: "Open Sans Regular";
+	src: local("Open Sans Regular"), url("../fonts/OpenSans-Regular.ttf");
+}
+
+$background: #1a1a1a;
+$placeholder: #252525;
+
+@mixin flexible() {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+
+html,
+body {
+	background-color: $background;
+	font-family: "Open Sans Regular";
+	color: white;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	border: 0;
+	padding: 0;
+	overflow-x: hidden;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	@include flexible();
+	flex-direction: column;
+	height: 1080px;
+	width: 100vw;
+	background-image: url("../img/header.png");
+	background-size: cover;
+	background-color: $placeholder;
+}
+
+.header-top {
+	@include flexible();
+	height: 91px;
+	width: 100vw;
+	font-family: "Open Sans Bold";
+	font-size: 14px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+	padding-left: 10%;
+}
+
+ul {
+	@include flexible();
+	width: 50%;
+	list-style: none;
+	padding-right: 10%;
+	a {
+		color: white;
+	}
+}
+
+h1 {
+	font-family: "Open Sans Light";
+	font-size: 72px;
+	font-weight: 300;
+	letter-spacing: 0.1em;
+	strong {
+		font-family: "Open Sans Bold";
+	}
+}
+
+button {
+	width: 220px;
+	height: 72px;
+	font-family: "Open Sans Bold";
+	font-size: 18px;
+	letter-spacing: 0.2em;
+	color: $background;
+	background: #34c759;
+	border-radius: 43px;
+	border: none;
+}
+
+.header-contacts {
+	@include flexible();
+	flex-direction: row;
+	height: 95px;
+	width: 60%;
+}

@@ -1,21 +1,20 @@
 @font-face {
-	font-family: "Open Sans Bold";
-	src: local("Open Sans Bold"), url("../fonts/OpenSans-Bold.ttf");
+	font-family: 'Open Sans Bold';
+	src: local('Open Sans Bold'), url('../fonts/OpenSans-Bold.ttf');
 }
 
 @font-face {
-	font-family: "Open Sans Light";
-	src: local("Open Sans Light"), url("../fonts/OpenSans-Light.ttf");
+	font-family: 'Open Sans Light';
+	src: local('Open Sans Light'), url('../fonts/OpenSans-Light.ttf');
 }
 
 @font-face {
-	font-family: "Open Sans Regular";
-	src: local("Open Sans Regular"), url("../fonts/OpenSans-Regular.ttf");
+	font-family: 'Open Sans Regular';
+	src: local('Open Sans Regular'), url('../fonts/OpenSans-Regular.ttf');
 }
 
 html,
 body {
-	font-family: "Open Sans";
 	background-color: #1A1A1A;
 	width: 100vw;
 	height: 100vh;
@@ -42,8 +41,8 @@ header {
 }
 
 .header-top {
-	width: 100vw;
 	height: 91px;
+	width: 100vw;
 	font-family: 'Open Sans Bold';
 	font-size: 14px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
