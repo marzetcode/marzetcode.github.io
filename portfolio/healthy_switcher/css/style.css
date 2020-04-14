@@ -35,15 +35,15 @@ a {
 }
 
 header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -51,9 +51,9 @@ header {
           flex-direction: column;
   height: 679px;
   width: 100vw;
+  background-color: #252525;
   background-image: url("../img/header.png");
   background-size: cover;
-  background-color: #252525;
 }
 
 header p {
@@ -61,15 +61,15 @@ header p {
 }
 
 .header-top {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
   height: 91px;
   width: 100vw;
@@ -83,15 +83,15 @@ header p {
 }
 
 ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
   width: 50%;
   list-style: none;
@@ -114,8 +114,8 @@ h1 strong {
 }
 
 button {
-  width: 220px;
   height: 72px;
+  width: 220px;
   font-family: "Open Sans Bold";
   font-size: 18px;
   letter-spacing: 0.2em;
@@ -126,15 +126,15 @@ button {
 }
 
 .header-contacts {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;

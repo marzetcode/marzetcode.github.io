@@ -17,9 +17,9 @@ $background: #1a1a1a;
 $placeholder: #252525;
 
 @mixin flexible() {
+	align-items: center;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 	text-align: center;
 }
 
@@ -48,12 +48,12 @@ header {
 	flex-direction: column;
 	height: 679px;
 	width: 100vw;
+	background-color: $placeholder;
 	background-image: url("../img/header.png");
 	background-size: cover;
-	background-color: $placeholder;
-		p {
-			opacity: 0.7;
-		}
+	p {
+		opacity: 0.7;
+	}
 }
 
 .header-top {
@@ -90,8 +90,8 @@ h1 {
 }
 
 button {
-	width: 220px;
 	height: 72px;
+	width: 220px;
 	font-family: "Open Sans Bold";
 	font-size: 18px;
 	letter-spacing: 0.2em;
