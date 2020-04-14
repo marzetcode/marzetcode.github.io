@@ -46,11 +46,14 @@ a {
 header {
 	@include flexible();
 	flex-direction: column;
-	height: 1080px;
+	height: 679px;
 	width: 100vw;
 	background-image: url("../img/header.png");
 	background-size: cover;
 	background-color: $placeholder;
+		p {
+			opacity: 0.7;
+		}
 }
 
 .header-top {
