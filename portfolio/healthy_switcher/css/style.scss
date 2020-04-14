@@ -29,7 +29,7 @@ body {
 	font-family: "Open Sans Regular";
 	color: white;
 	width: 100vw;
-	height: 100vh;
+	height: 2000px;
 	margin: 0;
 	border: 0;
 	padding: 0;
@@ -44,15 +44,19 @@ a {
 }
 
 header {
-	@include flexible();
-	flex-direction: column;
-	height: 679px;
+	height: 1080px;
 	width: 100vw;
 	background-color: $placeholder;
 	background-image: url("../img/header.png");
 	background-size: cover;
+}
+
+.header-content {
+	@include flexible();
+	flex-direction: column;
+	height: 679px;
 	p {
-		opacity: 0.7;
+		font-size: 16px;
 	}
 }
 
@@ -79,11 +83,21 @@ ul {
 	}
 }
 
+.header-text {
+	height: 231px;
+	p {
+		font-family: "Open Sans Light";
+		margin: 0;
+		opacity: 0.7;
+	}
+}
+
 h1 {
 	font-family: "Open Sans Light";
 	font-size: 72px;
 	font-weight: 300;
 	letter-spacing: 0.1em;
+	margin: 0;
 	strong {
 		font-family: "Open Sans Bold";
 	}
@@ -106,4 +120,5 @@ button {
 	flex-direction: row;
 	height: 95px;
 	width: 60%;
+	font-family: "Open Sans Bold";
 }
