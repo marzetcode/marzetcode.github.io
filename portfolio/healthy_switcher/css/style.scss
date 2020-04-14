@@ -13,14 +13,19 @@
 	src: local("Open Sans Regular"), url("../fonts/OpenSans-Regular.ttf");
 }
 
-$background: #1a1a1a;
+$background: #1A1A1A;
 $placeholder: #252525;
+$p-color: #A6A6A6;
 
-@mixin flexible() {
-	align-items: center;
+@mixin flexible($switch: 0) {
 	display: flex;
-	justify-content: space-between;
+	align-items: center;
 	text-align: center;
+	@if $switch == 0 {
+		justify-content: space-between;
+	} @else {
+		justify-content: space-around;
+	}
 }
 
 html,
@@ -48,7 +53,8 @@ header {
 	width: 100vw;
 	background-color: $placeholder;
 	background-image: url("../img/header.png");
-	background-size: cover;
+	background-size: 100vw 1080px;
+	z-index: 1;
 }
 
 .header-content {
@@ -85,21 +91,20 @@ ul {
 
 .header-text {
 	height: 231px;
+	h1 {
+		font-family: "Open Sans Light";
+		font-size: 72px;
+		font-weight: 300;
+		letter-spacing: 0.1em;
+		margin: 0;
+		strong {
+			font-family: "Open Sans Bold";
+		}
+	}
 	p {
 		font-family: "Open Sans Light";
 		margin: 0;
 		opacity: 0.7;
-	}
-}
-
-h1 {
-	font-family: "Open Sans Light";
-	font-size: 72px;
-	font-weight: 300;
-	letter-spacing: 0.1em;
-	margin: 0;
-	strong {
-		font-family: "Open Sans Bold";
 	}
 }
 
@@ -121,4 +126,30 @@ button {
 	height: 95px;
 	width: 60%;
 	font-family: "Open Sans Bold";
+}
+
+.about {
+	@include flexible($switch: 1);
+	flex-direction: column;
+	height: 736px;
+	margin: 0 10% 0 10%;
+	z-index: 2;
+	margin-top: 160px;
+	img {
+		padding-top: 60px;
+	}
+}
+
+.about-content {
+	height: 420px;
+	p {
+		color: $p-color;
+	}
+}
+
+.carousel {
+	@include flexible();
+	img {
+		margin: 20px;
+	}
 }

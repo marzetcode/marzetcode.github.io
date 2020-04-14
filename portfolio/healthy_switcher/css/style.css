@@ -15,7 +15,7 @@
 
 html,
 body {
-  background-color: #1a1a1a;
+  background-color: #1A1A1A;
   font-family: "Open Sans Regular";
   color: white;
   width: 100vw;
@@ -39,20 +39,21 @@ header {
   width: 100vw;
   background-color: #252525;
   background-image: url("../img/header.png");
-  background-size: cover;
+  background-size: 100vw 1080px;
+  z-index: 1;
 }
 
 .header-content {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -65,16 +66,16 @@ header {
 }
 
 .header-top {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  text-align: center;
   height: 91px;
   width: 100vw;
   font-family: "Open Sans Bold";
@@ -87,16 +88,16 @@ header {
 }
 
 ul {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  text-align: center;
   width: 50%;
   list-style: none;
   padding-right: 10%;
@@ -110,13 +111,7 @@ ul a {
   height: 231px;
 }
 
-.header-text p {
-  font-family: "Open Sans Light";
-  margin: 0;
-  opacity: 0.7;
-}
-
-h1 {
+.header-text h1 {
   font-family: "Open Sans Light";
   font-size: 72px;
   font-weight: 300;
@@ -124,8 +119,14 @@ h1 {
   margin: 0;
 }
 
-h1 strong {
+.header-text h1 strong {
   font-family: "Open Sans Bold";
+}
+
+.header-text p {
+  font-family: "Open Sans Light";
+  margin: 0;
+  opacity: 0.7;
 }
 
 button {
@@ -134,23 +135,23 @@ button {
   font-family: "Open Sans Bold";
   font-size: 18px;
   letter-spacing: 0.2em;
-  color: #1a1a1a;
+  color: #1A1A1A;
   background: #34c759;
   border-radius: 43px;
   border: none;
 }
 
 .header-contacts {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  text-align: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -158,5 +159,54 @@ button {
   height: 95px;
   width: 60%;
   font-family: "Open Sans Bold";
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 736px;
+  margin: 0 10% 0 10%;
+  z-index: 2;
+  margin-top: 160px;
+}
+
+.about img {
+  padding-top: 60px;
+}
+
+.about-content {
+  height: 420px;
+}
+
+.about-content p {
+  color: #A6A6A6;
+}
+
+.carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.carousel img {
+  margin: 20px;
 }
 /*# sourceMappingURL=style.css.map */
