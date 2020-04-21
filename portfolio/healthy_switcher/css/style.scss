@@ -16,7 +16,7 @@
 $background: #1a1a1a;
 $placeholder: #252525;
 $p-color: #a6a6a6;
-$green: #34C759;
+$green: #34c759;
 
 @mixin flexible($switch: 0) {
 	display: flex;
@@ -61,8 +61,6 @@ header {
 	background-image: url("../img/header.png");
 	background-size: 100vw 1080px;
 	background-color: $placeholder;
-
-
 }
 
 .header-content {
@@ -168,30 +166,51 @@ button {
 }
 
 .work {
-	border: 1px solid red;
+	// border: 1px solid red;
 	@include flexible();
 	flex-direction: column;
-	height: 476px;
+	height: 510px;
 	margin: 0 10% 0 10%;
 	hr {
 		height: 2px;
 		width: 60px;
 		border: none;
 		background: $green;
+		margin: 0;
 	}
 }
 
 .work-content {
 	height: 206px;
 	width: 100%;
+	margin-bottom: 30px;
 	@include flexible();
 	flex-direction: row;
 	div {
-		:after {
-			background: $green;
-		}
-		height: 206px;
+		height: 195px;
 		width: 255px;
+		text-align: left;
 		background: $placeholder;
+		border-radius: 6px;
+		padding: 1% 1% 0 1%;
+		p {
+			color: #ffffff;
+		}
 	}
+	.work-content-green {
+		background: $green;
+		p {
+			color: black;
+		}
+		hr {
+			background: black;
+		}
+	}
+}
+
+.dishes {
+	border: 1px solid red;
+	@include flexible();
+	flex-direction: column;
+	height: 1290px;
 }

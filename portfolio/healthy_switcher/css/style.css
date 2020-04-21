@@ -142,7 +142,7 @@ button {
   font-size: 18px;
   letter-spacing: 0.2em;
   color: #1a1a1a;
-  background: #34C759;
+  background: #34c759;
   border-radius: 43px;
   border: none;
 }
@@ -221,7 +221,6 @@ button {
 }
 
 .work {
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,7 +235,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 476px;
+  height: 510px;
   margin: 0 10% 0 10%;
 }
 
@@ -244,12 +243,14 @@ button {
   height: 2px;
   width: 60px;
   border: none;
-  background: #34C759;
+  background: #34c759;
+  margin: 0;
 }
 
 .work-content {
   height: 206px;
   width: 100%;
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,12 +268,46 @@ button {
 }
 
 .work-content div {
-  height: 206px;
+  height: 195px;
   width: 255px;
+  text-align: left;
   background: #252525;
+  border-radius: 6px;
+  padding: 1% 1% 0 1%;
 }
 
-.work-content div :after {
-  background: #34C759;
+.work-content div p {
+  color: #ffffff;
+}
+
+.work-content .work-content-green {
+  background: #34c759;
+}
+
+.work-content .work-content-green p {
+  color: black;
+}
+
+.work-content .work-content-green hr {
+  background: black;
+}
+
+.dishes {
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 1290px;
 }
 /*# sourceMappingURL=style.css.map */
