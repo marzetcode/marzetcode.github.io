@@ -186,10 +186,10 @@ button {
 	width: 100%;
 	@include flexible();
 	flex-direction: row;
-	:first-child {
-		background: $green;
-	}
 	div {
+		:after {
+			background: $green;
+		}
 		height: 206px;
 		width: 255px;
 		background: $placeholder;

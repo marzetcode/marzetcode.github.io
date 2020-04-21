@@ -266,13 +266,13 @@ button {
           flex-direction: row;
 }
 
-.work-content :first-child {
-  background: #34C759;
-}
-
 .work-content div {
   height: 206px;
   width: 255px;
   background: #252525;
+}
+
+.work-content div :after {
+  background: #34C759;
 }
 /*# sourceMappingURL=style.css.map */
