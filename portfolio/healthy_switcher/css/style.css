@@ -19,15 +19,30 @@ body {
   font-family: "Open Sans Regular";
   color: white;
   width: 100%;
-  height: 3000px;
-  margin: 0;
-  border: 0;
-  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   overflow-x: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+  background-image: url("../img/header_line.png");
+  background-size: 100vw 1080px;
+  background-repeat: no-repeat;
+}
+
+.contents {
+  width: 58.329%;
+  height: 5635px;
 }
 
 a {
@@ -35,19 +50,6 @@ a {
 }
 
 header {
-  height: 1576px;
-  width: 100%;
-}
-
-.header-background {
-  height: 1080px;
-  width: 100%;
-  background-image: url("../img/header.png");
-  background-size: 100vw 1080px;
-  background-color: #252525;
-}
-
-.header-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,7 +68,7 @@ header {
   width: 100%;
 }
 
-.header-content p {
+header p {
   font-size: 16px;
 }
 
@@ -85,7 +87,6 @@ header {
   width: 100%;
   font-family: "Open Sans Bold";
   font-size: 14px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .logo {
@@ -182,10 +183,7 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #252525;
-  height: 736px;
-  position: relative;
-  top: -240px;
-  margin: 0 10% 0 10%;
+  margin-top: 160px;
   border-radius: 6px;
   -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
@@ -221,6 +219,7 @@ button {
 }
 
 .work {
+  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,7 +235,6 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 510px;
-  margin: 0 10% 0 10%;
 }
 
 .work hr {
@@ -273,7 +271,7 @@ button {
   text-align: left;
   background: #252525;
   border-radius: 6px;
-  padding: 1% 1% 0 1%;
+  padding-left: 1%;
 }
 
 .work-content div p {
@@ -293,7 +291,6 @@ button {
 }
 
 .dishes {
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
