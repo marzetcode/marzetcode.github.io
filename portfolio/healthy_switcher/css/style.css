@@ -1,23 +1,23 @@
 @font-face {
-  font-family: "Open Sans Bold";
+  font-family: 'Open Sans Bold';
   src: local("Open Sans Bold"), url("../fonts/OpenSans-Bold.ttf");
 }
 
 @font-face {
-  font-family: "Open Sans Light";
+  font-family: 'Open Sans Light';
   src: local("Open Sans Light"), url("../fonts/OpenSans-Light.ttf");
 }
 
 @font-face {
-  font-family: "Open Sans Regular";
+  font-family: 'Open Sans Regular';
   src: local("Open Sans Regular"), url("../fonts/OpenSans-Regular.ttf");
 }
 
 html,
 body {
   background-color: #1a1a1a;
-  font-family: "Open Sans Regular";
-  color: #FFFFFF;
+  font-family: 'Open Sans Regular';
+  color: #ffffff;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,7 +50,7 @@ a {
 }
 
 p {
-  color: #A6A6A6;
+  color: #a6a6a6;
 }
 
 header {
@@ -89,7 +89,7 @@ header p {
           justify-content: space-between;
   height: 90px;
   width: 100%;
-  font-family: "Open Sans Bold";
+  font-family: 'Open Sans Bold';
   font-size: 14px;
 }
 
@@ -115,7 +115,7 @@ ul {
 }
 
 ul a {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .header-text {
@@ -123,7 +123,7 @@ ul a {
 }
 
 .header-text h1 {
-  font-family: "Open Sans Light";
+  font-family: 'Open Sans Light';
   font-size: 72px;
   font-weight: 300;
   letter-spacing: 0.1em;
@@ -131,18 +131,18 @@ ul a {
 }
 
 .header-text h1 strong {
-  font-family: "Open Sans Bold";
+  font-family: 'Open Sans Bold';
 }
 
 .header-text p {
-  font-family: "Open Sans Light";
+  font-family: 'Open Sans Light';
   margin: 0;
 }
 
 button {
   height: 72px;
   width: 220px;
-  font-family: "Open Sans Bold";
+  font-family: 'Open Sans Bold';
   font-size: 18px;
   letter-spacing: 0.2em;
   color: #1a1a1a;
@@ -168,11 +168,11 @@ button {
           flex-direction: row;
   height: 95px;
   width: 60%;
-  font-family: "Open Sans Bold";
+  font-family: 'Open Sans Bold';
 }
 
 .header-contacts p {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .about {
@@ -327,11 +327,19 @@ hr {
       flex-wrap: wrap;
 }
 
-.dishes-content div {
+.dishes-content .dishes-content-box {
   height: 493px;
   width: 350px;
   background: #252525;
   margin-top: 30px;
   text-align: left;
+}
+
+.dishes-content .dishes-content-box h3 {
+  padding: 0 8.5714% 0 8.5714%;
+}
+
+.dishes-content .dishes-content-box p {
+  padding: 0 8.5714% 0 8.5714%;
 }
 /*# sourceMappingURL=style.css.map */

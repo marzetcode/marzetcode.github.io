@@ -1,31 +1,32 @@
 @font-face {
-	font-family: "Open Sans Bold";
-	src: local("Open Sans Bold"), url("../fonts/OpenSans-Bold.ttf");
+	font-family: 'Open Sans Bold';
+	src: local('Open Sans Bold'), url('../fonts/OpenSans-Bold.ttf');
 }
 
 @font-face {
-	font-family: "Open Sans Light";
-	src: local("Open Sans Light"), url("../fonts/OpenSans-Light.ttf");
+	font-family: 'Open Sans Light';
+	src: local('Open Sans Light'), url('../fonts/OpenSans-Light.ttf');
 }
 
 @font-face {
-	font-family: "Open Sans Regular";
-	src: local("Open Sans Regular"), url("../fonts/OpenSans-Regular.ttf");
+	font-family: 'Open Sans Regular';
+	src: local('Open Sans Regular'), url('../fonts/OpenSans-Regular.ttf');
 }
 
 $background: #1a1a1a;
 $placeholder: #252525;
-$text: #A6A6A6;
-$title: #FFFFFF;
+$text: #a6a6a6;
+$title: #ffffff;
 $green: #34c759;
 
 @mixin flexible($switch: 0) {
 	display: flex;
 	align-items: center;
 	text-align: center;
-	@if $switch == 0 {
+	@if $switch==0 {
 		justify-content: space-between;
-	} @else {
+	}
+	@else {
 		justify-content: space-around;
 	}
 }
@@ -33,7 +34,7 @@ $green: #34c759;
 html,
 body {
 	background-color: $background;
-	font-family: "Open Sans Regular";
+	font-family: 'Open Sans Regular';
 	color: $title;
 	width: 100%;
 	display: flex;
@@ -44,7 +45,7 @@ body {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 	-webkit-overflow-scrolling: touch;
-	background-image: url("../img/header-line.png");
+	background-image: url('../img/header-line.png');
 	background-size: 100vw 1080px;
 	background-repeat: no-repeat;
 }
@@ -76,7 +77,7 @@ header {
 	@include flexible();
 	height: 90px;
 	width: 100%;
-	font-family: "Open Sans Bold";
+	font-family: 'Open Sans Bold';
 	font-size: 14px;
 }
 
@@ -98,17 +99,17 @@ ul {
 .header-text {
 	height: 231px;
 	h1 {
-		font-family: "Open Sans Light";
+		font-family: 'Open Sans Light';
 		font-size: 72px;
 		font-weight: 300;
 		letter-spacing: 0.1em;
 		margin: 0;
 		strong {
-			font-family: "Open Sans Bold";
+			font-family: 'Open Sans Bold';
 		}
 	}
 	p {
-		font-family: "Open Sans Light";
+		font-family: 'Open Sans Light';
 		margin: 0;
 	}
 }
@@ -116,7 +117,7 @@ ul {
 button {
 	height: 72px;
 	width: 220px;
-	font-family: "Open Sans Bold";
+	font-family: 'Open Sans Bold';
 	font-size: 18px;
 	letter-spacing: 0.2em;
 	color: $background;
@@ -130,7 +131,7 @@ button {
 	flex-direction: row;
 	height: 95px;
 	width: 60%;
-	font-family: "Open Sans Bold";
+	font-family: 'Open Sans Bold';
 	p {
 		color: $title;
 	}
@@ -164,7 +165,6 @@ button {
 	@include flexible();
 	flex-direction: column;
 	height: 510px;
-
 }
 
 hr {
@@ -192,6 +192,7 @@ hr {
 			margin-right: 25px;
 		}
 	}
+
 	.work-content-green {
 		color: black;
 		background: $green;
@@ -214,11 +215,17 @@ hr {
 .dishes-content {
 	@include flexible();
 	flex-wrap: wrap;
-		div{
-			height: 493px;
-			width: 350px;
-			background: $placeholder;
-			margin-top: 30px;
-			text-align: left;
+	.dishes-content-box {
+		height: 493px;
+		width: 350px;
+		background: $placeholder;
+		margin-top: 30px;
+		text-align: left;
+		h3 {
+			padding: 0 8.5714% 0 8.5714%;
 		}
+		p {
+			padding: 0 8.5714% 0 8.5714%;
+		}
+	}
 }
