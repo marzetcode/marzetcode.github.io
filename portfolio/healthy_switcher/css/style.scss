@@ -15,7 +15,8 @@
 
 $background: #1a1a1a;
 $placeholder: #252525;
-$p-color: #a6a6a6;
+$text: #A6A6A6;
+$title: #FFFFFF;
 $green: #34c759;
 
 @mixin flexible($switch: 0) {
@@ -33,7 +34,7 @@ html,
 body {
 	background-color: $background;
 	font-family: "Open Sans Regular";
-	color: white;
+	color: $title;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -43,7 +44,7 @@ body {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 	-webkit-overflow-scrolling: touch;
-	background-image: url("../img/header_line.png");
+	background-image: url("../img/header-line.png");
 	background-size: 100vw 1080px;
 	background-repeat: no-repeat;
 }
@@ -55,6 +56,10 @@ body {
 
 a {
 	text-decoration: none;
+}
+
+p {
+	color: $text;
 }
 
 header {
@@ -86,7 +91,7 @@ ul {
 	width: 400px;
 	margin-right: 10%;
 	a {
-		color: white;
+		color: $title;
 	}
 }
 
@@ -105,7 +110,6 @@ ul {
 	p {
 		font-family: "Open Sans Light";
 		margin: 0;
-		opacity: 0.7;
 	}
 }
 
@@ -127,6 +131,9 @@ button {
 	height: 95px;
 	width: 60%;
 	font-family: "Open Sans Bold";
+	p {
+		color: $title;
+	}
 }
 
 .about {
@@ -143,9 +150,6 @@ button {
 
 .about-content {
 	height: 420px;
-	p {
-		color: $p-color;
-	}
 }
 
 .carousel {
@@ -156,17 +160,19 @@ button {
 }
 
 .work {
-	border: 1px solid red;
+	// border: 1px solid red;
 	@include flexible();
 	flex-direction: column;
 	height: 510px;
-	hr {
-		height: 2px;
-		width: 60px;
-		border: none;
-		background: $green;
-		margin: 0;
-	}
+
+}
+
+hr {
+	height: 2px;
+	width: 60px;
+	border: none;
+	background: $green;
+	margin: 0;
 }
 
 .work-content {
@@ -177,16 +183,17 @@ button {
 	flex-direction: row;
 	div {
 		height: 195px;
-		width: 255px;
+		width: 230px;
 		text-align: left;
 		background: $placeholder;
 		border-radius: 6px;
-		padding-left: 1%;
+		padding-left: 25px;
 		p {
-			color: #ffffff;
+			margin-right: 25px;
 		}
 	}
 	.work-content-green {
+		color: black;
 		background: $green;
 		p {
 			color: black;
@@ -198,8 +205,20 @@ button {
 }
 
 .dishes {
-	// border: 1px solid red;
+	border: 1px solid red;
+	height: 1286px;
 	@include flexible();
 	flex-direction: column;
-	height: 1290px;
+}
+
+.dishes-content {
+	@include flexible();
+	flex-wrap: wrap;
+		div{
+			height: 493px;
+			width: 350px;
+			background: $placeholder;
+			margin-top: 30px;
+			text-align: left;
+		}
 }

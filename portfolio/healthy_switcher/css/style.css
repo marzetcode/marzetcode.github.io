@@ -17,7 +17,7 @@ html,
 body {
   background-color: #1a1a1a;
   font-family: "Open Sans Regular";
-  color: white;
+  color: #FFFFFF;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,7 +35,7 @@ body {
           box-sizing: border-box;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  background-image: url("../img/header_line.png");
+  background-image: url("../img/header-line.png");
   background-size: 100vw 1080px;
   background-repeat: no-repeat;
 }
@@ -47,6 +47,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+p {
+  color: #A6A6A6;
 }
 
 header {
@@ -111,7 +115,7 @@ ul {
 }
 
 ul a {
-  color: white;
+  color: #FFFFFF;
 }
 
 .header-text {
@@ -133,7 +137,6 @@ ul a {
 .header-text p {
   font-family: "Open Sans Light";
   margin: 0;
-  opacity: 0.7;
 }
 
 button {
@@ -168,6 +171,10 @@ button {
   font-family: "Open Sans Bold";
 }
 
+.header-contacts p {
+  color: #FFFFFF;
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -197,10 +204,6 @@ button {
   height: 420px;
 }
 
-.about-content p {
-  color: #a6a6a6;
-}
-
 .carousel {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -219,7 +222,6 @@ button {
 }
 
 .work {
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,7 +239,7 @@ button {
   height: 510px;
 }
 
-.work hr {
+hr {
   height: 2px;
   width: 60px;
   border: none;
@@ -267,18 +269,19 @@ button {
 
 .work-content div {
   height: 195px;
-  width: 255px;
+  width: 230px;
   text-align: left;
   background: #252525;
   border-radius: 6px;
-  padding-left: 1%;
+  padding-left: 25px;
 }
 
 .work-content div p {
-  color: #ffffff;
+  margin-right: 25px;
 }
 
 .work-content .work-content-green {
+  color: black;
   background: #34c759;
 }
 
@@ -291,6 +294,8 @@ button {
 }
 
 .dishes {
+  border: 1px solid red;
+  height: 1286px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -305,6 +310,28 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 1290px;
+}
+
+.dishes-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.dishes-content div {
+  height: 493px;
+  width: 350px;
+  background: #252525;
+  margin-top: 30px;
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */
