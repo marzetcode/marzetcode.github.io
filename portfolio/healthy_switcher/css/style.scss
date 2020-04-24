@@ -33,7 +33,6 @@ $green: #34c759;
 
 html,
 body {
-	background-color: $background;
 	font-family: 'Open Sans Regular';
 	color: $title;
 	width: 100%;
@@ -45,9 +44,8 @@ body {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 	-webkit-overflow-scrolling: touch;
-	background-image: url('../img/header-line.png');
+	background: url('../img/header-line.png') no-repeat $background;
 	background-size: 100vw 1080px;
-	background-repeat: no-repeat;
 }
 
 .contents {
@@ -140,7 +138,7 @@ button {
 .about {
 	@include flexible($switch: 1);
 	flex-direction: column;
-	background-color: $placeholder;
+	background: $placeholder;
 	margin-top: 160px;
 	border-radius: 6px;
 	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
@@ -206,7 +204,7 @@ hr {
 }
 
 .dishes {
-	border: 1px solid red;
+	// border: 1px solid red;
 	height: 1286px;
 	@include flexible();
 	flex-direction: column;
@@ -226,6 +224,22 @@ hr {
 		}
 		p {
 			padding: 0 8.5714% 0 8.5714%;
+		}
+	}
+}
+
+.chefs {
+	border: 1px solid red;
+	height: 402px;
+	@include flexible();
+	flex-direction: column;
+	.chefs-content {
+		@include flexible();
+		width: 100%;
+		div {
+			height: 155px;
+			width: 350px;
+			background: $placeholder;
 		}
 	}
 }

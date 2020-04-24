@@ -15,7 +15,6 @@
 
 html,
 body {
-  background-color: #1a1a1a;
   font-family: 'Open Sans Regular';
   color: #ffffff;
   width: 100%;
@@ -35,9 +34,8 @@ body {
           box-sizing: border-box;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  background-image: url("../img/header-line.png");
+  background: url("../img/header-line.png") no-repeat #1a1a1a;
   background-size: 100vw 1080px;
-  background-repeat: no-repeat;
 }
 
 .contents {
@@ -189,7 +187,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #252525;
+  background: #252525;
   margin-top: 160px;
   border-radius: 6px;
   -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
@@ -294,7 +292,6 @@ hr {
 }
 
 .dishes {
-  border: 1px solid red;
   height: 1286px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -341,5 +338,44 @@ hr {
 
 .dishes-content .dishes-content-box p {
   padding: 0 8.5714% 0 8.5714%;
+}
+
+.chefs {
+  border: 1px solid red;
+  height: 402px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.chefs .chefs-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.chefs .chefs-content div {
+  height: 155px;
+  width: 350px;
+  background: #252525;
 }
 /*# sourceMappingURL=style.css.map */
