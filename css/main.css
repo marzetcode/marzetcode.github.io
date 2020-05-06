@@ -3,6 +3,11 @@
 	src: local("Graduate"), url("../fonts/Graduate-Regular.ttf");
 }
 
+@font-face {
+	font-family: "Black Ops One";
+	src: local("Black Ops One"), url("../fonts/BlackOpsOne-Regular.ttf");
+}
+
 html,
 body {
 	font-family: "Graduate";
