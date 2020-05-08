@@ -8,7 +8,8 @@
 </head>
 
 <style>
-	html, body {
+	html,
+	body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -31,6 +32,8 @@
 	}
 
 	.apple {
+		left: 1%;
+		width: 50%;
 		position: absolute;
 		-webkit-animation: animation-phones 5s 2s infinite alternate;
 		animation: animation-phones 5s 2s infinite alternate;
@@ -74,14 +77,10 @@
 		}
 	}
 
-	@media screen and (min-width:718px) {
-		.apple {
-			left: 1%;
-			width: 54%;
-		}
-	}
-
 	.google {
+		right: 13%;
+		width: 50%;
+		margin-top: 6%;
 		position: absolute;
 		-webkit-animation: animation-phones 6s 2s infinite alternate;
 		animation: animation-phones 6s 2s infinite alternate;
@@ -122,14 +121,6 @@
 			-webkit-transform: translateY(0px);
 			-ms-transform: translateY(0px);
 			transform: translateY(0px);
-		}
-	}
-
-	@media screen and (min-width:718px) {
-		.google {
-			right: 13%;
-			width: 54%;
-			margin-top: 6%;
 		}
 	}
 </style>
