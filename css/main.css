@@ -126,11 +126,12 @@ section {
 .blockrow {
 	display: flex;
 	opacity: 0;
+	flex-wrap: nowrap;
 }
 
 .main-block {
-	width: 35vw;
-	height: 40vh;
+	width: 25vw;
+	height: 25vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
