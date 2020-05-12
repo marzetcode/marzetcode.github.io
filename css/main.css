@@ -241,6 +241,10 @@ footer img {
 	header {
 		background-image: url("../img/main-320px.png");
 	}
+
+	.main-block {
+		margin: 5%;
+	}
 }
 
 @media print {
