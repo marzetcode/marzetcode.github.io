@@ -13,15 +13,34 @@
 	<style>
 		body {
 			background: grey;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+			border: 0;
+		}
+		div {
+			margin-top: 45vh;
+			font-size: 250%;
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
 		}
 	</style>
 
+	<div>👆</div>
 	<script>
 		function randomBackground() {
-			// array of colors 
-			let colors = ['#dc6900', '#eb8c00', '#e0301e', '#a32020', '#602320', '#740001', '#560e07', '#400303', '#220000',
-				'#000000', '#670067', '#004c7d', '#2a6546', '#007ac9', '#006bb0', '#4c7d00', '#7ac900'];
-			// random color 
+			// array of colors
+			let colors = ['#dc6900', '#eb8c00', '#e0301e', '#a32020', '#602320', '#740001', '#560e07',
+				'#400303', '#220000',
+				'#000000', '#670067', '#004c7d', '#2a6546', '#007ac9', '#006bb0', '#4c7d00', '#7ac900'
+			];
+			// random color
 			document.body.style.background = colors[Math.floor(Math.random() * colors.length)];
 		}
 		randomBackground();
