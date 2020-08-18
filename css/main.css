@@ -4,6 +4,11 @@
 }
 
 @font-face {
+	font-family: "Roboto";
+	src: local("Roboto"), url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
 	font-family: "Black Ops One";
 	src: local("Black Ops One"), url("../fonts/BlackOpsOne-Regular.ttf");
 }
@@ -110,7 +115,7 @@ main {
 	height: auto;
 	margin: 0;
 	border: 0;
-	padding: 2% 0 2% 0;
+	padding: 0;
 	color: white;
 	display: flex;
 	flex-direction: column;
@@ -126,7 +131,8 @@ main {
 
 .about p {
 	width: 80%;
-	font-size: 1.5vw;
+	font-family: "Roboto";
+	font-size: 2vw;
 }
 
 section {
