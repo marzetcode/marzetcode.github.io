@@ -18,6 +18,7 @@ body {
 	font-family: "Graduate";
 	background-color: #d3aa0c;
 	text-decoration: none;
+	font-size: 2vw;
 	width: 100vw;
 	height: 100vh;
 	margin: 0;
@@ -25,7 +26,6 @@ body {
 	padding: 0;
 	cursor: url(../img/cursor.png), auto;
 	/* overflow-x: hidden; doesn't work with window.pageYOffset*/
-	font-size: 2vw;
 	box-sizing: border-box;
 	/* custom scroll bar for firefox*/
 	scrollbar-width: thin;
@@ -70,7 +70,6 @@ menu {
 	display: flex;
 	justify-content: space-evenly;
 	writing-mode: vertical-rl;
-	font-size: 1.5vw;
 	list-style: none;
 	padding-right: 2%;
 	opacity: 0;
@@ -119,6 +118,7 @@ main {
 	color: white;
 	display: flex;
 	flex-direction: column;
+	padding-bottom: 10vh;
 }
 
 .about {
@@ -132,7 +132,7 @@ main {
 .about p {
 	width: 80%;
 	font-family: "Roboto";
-	font-size: 1.6vw;
+	color: #1d0933;
 }
 
 section {
@@ -176,7 +176,6 @@ footer {
 	align-items: center;
 	flex-direction: column;
 	text-align: center;
-	font-size: 1.3vw;
 }
 
 footer a {
@@ -188,13 +187,12 @@ footer img {
 }
 
 @media screen and (max-width: 980px) {
+	body {
+		font-size: 3vw;
+	}
 
 	header {
 		background-image: url("../img/main-980px.png");
-	}
-
-	main {
-		font-size: 3vw;
 	}
 
 	.main-block {
@@ -210,32 +208,29 @@ footer img {
 
 	footer {
 		height: 100vh;
-		font-size: 3vw;
 	}
 }
 
 @media screen and (max-width: 736px) {
+	body {
+		font-size: 4vw;
+	}
 
 	header {
 		background-image: url("../img/main-736px.png");
 		background-size: cover;
 	}
 
-	ul {
-		font-size: 4vw;
-	}
-
 	.main-block {
 		width: 40vw;
 		height: 20vh;
 	}
-
-	footer {
-		height: 100vh;
-	}
 }
 
 @media screen and (max-width: 480px) {
+	body {
+		font-size: 5vw;
+	}
 
 	h1 {
 		margin: 0;
@@ -244,27 +239,29 @@ footer img {
 
 	header {
 		background-image: url("../img/main-480px.png");
-		font-size: 5vw;
 	}
 
-	main {
-		font-size: 4vw;
+	.about {
+		height: 60vh;
 	}
 
 	footer {
-		height: 100vh;
-		font-size: 4vw;
+		height: 60vh;
 	}
 }
 
 @media screen and (max-width: 320px) {
-
 	header {
 		background-image: url("../img/main-320px.png");
 	}
 
+	.about p {
+		font-size: 6vw;
+	}
+
 	.main-block {
 		margin: 5%;
+		height: 15vh;
 	}
 }
 
@@ -283,7 +280,7 @@ footer img {
 		background: #d3aa0c;
 	}
 
-	ul {
+	menu {
 		font-size: 3vw;
 		opacity: 1;
 	}
