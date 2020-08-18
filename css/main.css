@@ -130,9 +130,11 @@ main {
 }
 
 .about p {
-	width: 80%;
 	font-family: "Roboto";
 	color: #1d0933;
+	padding: 10%;
+	margin: 0;
+
 }
 
 section {
