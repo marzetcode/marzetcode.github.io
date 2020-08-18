@@ -20,7 +20,7 @@ console.log(blockRowFade[0].style);
 console.log('clientHeight: ', browserH);
 document.addEventListener('DOMContentLoaded', function() {
 	window.addEventListener('scroll', function() {
-		let h = 300;
+		let h = 1000;
 		let blockRowY = window.pageYOffset;
 		console.log(blockRowY);
 		// если высота окна браузера меньше 700 или если страница перезагружена
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			};
 		} else
 			for (let i = 0; i < blockRowFade.length; i++) {
-				if ((blockRowY < h) && (blockRowY > h - 50)) {
+				if ((blockRowY < h) && (blockRowY > h - 100)) {
 					blockRowFade[i].classList.add('animated', 'fadeIn');
 				};
 				h = h + 400;
