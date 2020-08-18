@@ -255,6 +255,10 @@ footer img {
 		background-image: url("../img/main-320px.png");
 	}
 
+	.about {
+		height: 110vh;
+	}
+
 	.about p {
 		font-size: 6vw;
 	}
