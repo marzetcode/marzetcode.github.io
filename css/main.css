@@ -8,11 +8,6 @@
 	src: local("Roboto"), url("../fonts/Roboto-Regular.ttf");
 }
 
-@font-face {
-	font-family: "Black Ops One";
-	src: local("Black Ops One"), url("../fonts/BlackOpsOne-Regular.ttf");
-}
-
 html,
 body {
 	font-family: "Graduate";
