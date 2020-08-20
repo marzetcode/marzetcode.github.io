@@ -1,1 +1,1 @@
-console.log(window.navigator.appName);
+alert(window.navigator.appName);
