@@ -7,9 +7,7 @@
 	<link rel="icon" type="image/png" href="../../img/favicon.png">
 	<link rel="apple-touch-icon" href="../../img/favicon.png">
 	<link rel="shortcut icon" type="image/png" href="../../img/favicon.png">
-</head>
 
-<body onclick="randomBackground()">
 	<style>
 		body {
 			background: grey;
@@ -31,11 +29,13 @@
 			user-select: none;
 		}
 	</style>
+</head>
 
+<body onclick="randomBackground()">
 	<div>👆</div>
 	<script>
 		function randomBackground() {
-			document.body.style.background = "#" + Math.floor(Math.random()*16777215).toString(16);
+			document.body.style.background = "#" + Math.floor(Math.random() * 16777215).toString(16);
 		}
 		randomBackground();
 	</script>
