@@ -208,15 +208,11 @@ footer img {
 	footer {
 		height: 100vh;
 	}
-
-	.hiddenblock {
-		opacity: 0;
-	}
 }
 
 @media screen and (max-width: 810px) {
 	.hiddenblock {
-		opacity: 0;
+		display: none;
 	}
 }
 
