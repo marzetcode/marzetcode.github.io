@@ -129,7 +129,6 @@ main {
 	color: #1d0933;
 	padding: 10%;
 	margin: 0;
-
 }
 
 section {
@@ -249,8 +248,8 @@ footer img {
 }
 
 @media screen and (max-width: 320px) {
-	body {
-		font-size: 5vw;
+	body, html {
+		font-size: 4.5vw;
 	}
 
 	header {
@@ -259,6 +258,7 @@ footer img {
 
 	.about {
 		height: 100vh;
+		font-size: 5.5vw;
 	}
 
 	.main-block {
@@ -267,7 +267,7 @@ footer img {
 	}
 
 	footer {
-		font-size: 5vw;
+		font-size: 4.5vw;
 	}
 }
 
