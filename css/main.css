@@ -249,21 +249,25 @@ footer img {
 }
 
 @media screen and (max-width: 320px) {
+	body {
+		font-size: 5vw;
+	}
+
 	header {
 		background-image: url("../img/main-320px.png");
 	}
 
 	.about {
-		height: 110vh;
-	}
-
-	.about p {
-		font-size: 6vw;
+		height: 100vh;
 	}
 
 	.main-block {
 		margin: 5%;
 		height: 15vh;
+	}
+
+	footer {
+		font-size: 5vw;
 	}
 }
 
