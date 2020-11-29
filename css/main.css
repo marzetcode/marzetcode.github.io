@@ -261,8 +261,13 @@ footer img {
 	}
 
 	.about {
-		height: 110vh;
-		font-size: 5.5vw;
+		height: 100vh;
+		font-size: 4.5vw;
+	}
+
+	.about p {
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 
 	.main-block {
