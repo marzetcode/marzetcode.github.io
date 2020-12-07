@@ -14,7 +14,6 @@ html {
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
-	position: absolute;
 }
 
 p {
@@ -62,6 +61,7 @@ p {
 
 .video-wrap {
 	position: relative;
+	z-index: 2;
 	top: -5vh;
 	display: flex;
 	-webkit-box-pack: center;
@@ -79,8 +79,6 @@ p {
 .video-wrap video {
 	width: 71.80vw;
 	height: 27.08vh;
-	position: relative;
-	z-index: 2;
 }
 
 #play-button {
@@ -122,6 +120,7 @@ p {
 	width: 100%;
 	height: 29vh;
 	position: relative;
+	z-index: 5;
 	top: -57vh;
 	display: flex;
 	-webkit-box-orient: horizontal;
@@ -184,6 +183,7 @@ p {
 	height: 11.47vh;
 	margin: 0 2.19vw 2.19vw 2.19vw;
 	position: relative;
+	z-index: 6;
 	top: -56vh;
 	display: flex;
 	-webkit-box-orient: horizontal;
