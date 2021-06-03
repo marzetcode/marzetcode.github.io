@@ -22,9 +22,9 @@ function initMap() {
 	});
 
 	rectangle = new google.maps.Rectangle({
-		strokeWeight: 0,
-		fillColor: "#000000",
-		fillOpacity: 0.5,
+		//strokeWeight: 0,
+		//fillColor: "#000000",
+		//fillOpacity: 0.5,
 		map,
 		bounds: borders,
 	});
