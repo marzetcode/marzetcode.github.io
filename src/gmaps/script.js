@@ -21,13 +21,13 @@ function initMap() {
 		disableDefaultUI: true,
 	});
 
-	rectangle = new google.maps.Rectangle({
-		//strokeWeight: 0,
-		//fillColor: "#000000",
-		//fillOpacity: 0.5,
-		map,
-		bounds: borders,
-	});
+	//rectangle = new google.maps.Rectangle({
+	//	strokeWeight: 0,
+	//	fillColor: "#000000",
+	//	fillOpacity: 0.5,
+	//	map,
+	//	bounds: borders,
+	//});
 
 	//markers
 	let markers = [];
