@@ -187,7 +187,29 @@ footer {
 }
 .icons a {
 	color: #d3aa0c;
+	width: 10%;
 	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+.icons a:nth-child(1) {
+	background-image: url(../img/gh.png);
+}
+.icons a:nth-child(2) {
+	background-image: url(../img/fb.png);
+}
+.icons a:nth-child(3) {
+	background-image: url(../img/tw.png);
+}
+.icons a:nth-child(4) {
+	background-image: url(../img/ig.png);
+}
+.icons a:nth-child(5) {
+	background-image: url(../img/in.png);
+}
+.icons a:nth-child(6) {
+	background-image: url(../img/tm.png);
 }
 .icons img {
 	width: auto;
