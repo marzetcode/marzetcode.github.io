@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Marzet</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<meta name="yandex-verification" content="015995ac5a4c2193">
+
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="apple-touch-icon" href="img/favicon.png">
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176708696-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-176708696-1');
+	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+
+	<script src="js/js.cookie.js"></script>
+</head>
+
+<body>
+	<!-- Yandex.Metrika counter -->
+	<!--<script type="text/javascript">
+		(function (m, e, t, r, i, k, a) {
+			m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+			m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+		})
+			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+		ym(54933406, "init", {
+			clickmap: true,
+			trackLinks: true,
+			accurateTrackBounce: true,
+			webvisor: true
+		});
+	</script>-->
+	<!--<noscript>
+		<div><img src="https://mc.yandex.ru/watch/54933406" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>-->
+	<!-- /Yandex.Metrika counter -->
+
+	<header id="parallax">
+		<h1>Hi<br />my name is Marzet<br />I'm a frontend<br />developer...</h1>
+		<menu>
+			<li><a href="#resume">resume</a></li>
+			<li><a href="#about">about</a></li>
+			<li><a href="#portfolio">portfolio</a></li>
+			<li><a href="#contacts">contacts</a></li>
+		</menu>
+	</header>
+
+	<main>
+		<div class="about" id="about">
+			<p>
+				... with a strong background of over four years in IT support and a Bachelor’s degree in Information Systems and Technology 🎓 My professional experience includes technical support, customer care, conflict resolution, problem solving. Helping end users with software and troubleshooting network issues 💻 During my internship and coursework I made a commercial website along with my fellow student. I got a "Responsive web design" certificate 👩‍💻 And I am currently working in tech support and learning JavaScript and React by myself 💪 I believe that my skills and experience make me an excellent candidate for the frontend developer position. Check out my portfolio 👇
+			</p>
+		</div>
+		<section id="portfolio" class="blockrow">
+			<a href="https://marzet-react.netlify.app/" class="main-block" target="_blank" rel="noopener">React<br />learning</a>
+			<a href="portfolio/simple_animation/index.html" class="main-block" target="_blank" rel="noopener">simple<br />animation</a>
+			<a href="portfolio/random_background/random_background.html" class="main-block" target="_blank" rel="noopener">random<br />background</a>
+			<a href="portfolio/adyghe/adyghe_flag.html" class="main-block" target="_blank" rel="noopener">adyghe<br />flag</a>
+			<a href="portfolio/bandpage/index.html" class="main-block" target="_blank" rel="noopener">band<br />page</a>
+			<a href="portfolio/free_portfolio/index.html" class="main-block" target="_blank" rel="noopener">photo<br />page</a>
+			<a href="portfolio/Marzet_Khatit_resume.pdf" class="main-block" target="_blank" rel="noopener" id="resume">resume<br />in pdf [en]</a>
+			<a href="portfolio/Марзет_Хатит_резюме.pdf" class="main-block" target="_blank" rel="noopener">resume<br />in pdf [ru]</a>
+			<div class="main-block">...</div>
+		</section>
+	</main>
+
+	<footer id="contacts">
+		<div class="footerContent">
+			<p>follow & contact me</p>
+			<div class="icons">
+				<a href="https://github.com/stairwaytohell" target="_blank" rel="noopener"></a>
+				<a href="https://www.facebook.com/marzet.rock" target="_blank" rel="noopener"></a>
+				<a href="https://twitter.com/VmarzetV" target="_blank" rel="noopener"></a>
+				<a href="https://www.instagram.com/stairwayto_hell" target="_blank" rel="noopener"></a>
+				<a href="https://www.linkedin.com/in/marzet/" target="_blank" rel="noopener"></a>
+				<a href="https://t.me/stairwayto_hell" target="_blank" rel="noopener"></a>
+			</div>
+			<a href="https://github.com/stairwaytohell" target="_blank" rel="noopener">code with &#9825; by Marzet</a>
+			<a href="https://pages.github.com/" target="_blank" rel="noopener">hosted with &#9825; by GitHub</a>
+		</div>
+	</footer>
+
+	<div class="cookie-notification">
+		<div class="cookie-notification__body">
+			We use cookies to...
+		</div>
+		<div class="cookie-notification__buttons">
+			<button class="cookie-notification__button" id="yes">Yes</button>
+			<button class="cookie-notification__button" id="no">No</button>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var messageElement = document.querySelector('.cookie-notification');
+		// Если нет cookies, то показываем плашку
+		if (!Cookies.get('agreement')) {
+			showMessage();
+		} else {
+			initCounter();
+		}
+		// Загружаем сам код счетчика сразу
+		//(function (m, e, t, r, i, k, a) {
+		//	m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+		//	m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+		//})
+		//	(window, document, 'script', '//mc.yandex.ru/metrika/tag.js', 'ym')
+		// Функция добавляет класс к DOM-элементу. Вы можете использовать библиотеку jQuery или другой фреймворк
+		function addClass(o, c) {
+			var re = new RegExp("(^|\\s)" + c + "(\\s|$)", "g");
+			if (!o || re.test(o.className)) {
+				return;
+			}
+			o.className = (o.className + " " + c).replace(/\s+/g, " ").replace(/(^ | $)/g, "");
+		}
+		// Функция удаляет класс из DOM-элемента. Вы можете использовать библиотеку jQuery или другой фреймворк
+		function removeClass(o, c) {
+			var re = new RegExp('(^|\\s)' + c + '(\\s|$)', 'g');
+			if (!o) {
+				return;
+			}
+			o.className = o.className.replace(re, '$1').replace(/\s+/g, ' ').replace(/(^ | $)/g, '');
+		}
+		// Функция, которая прячет предупреждение
+		function hideMessage() {
+			addClass(messageElement, 'cookie-notification_hidden_yes');
+		}
+		// Функция, которая показывает предупреждение
+		function showMessage() {
+			removeClass(messageElement, 'cookie-notification_hidden_yes');
+		}
+		function saveAnswer() {
+			// Прячем предупреждение
+			hideMessage();
+
+			// Ставим cookies
+			Cookies.set('agreement', '1');
+		}
+		function initCounter() {
+			(function (m, e, t, r, i, k, a) {
+				m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+				m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+			})
+				(window, document, 'script', '//mc.yandex.ru/metrika/tag.js', 'ym');
+
+			ym(54933406, "init", {
+				clickmap: true,
+				trackLinks: true,
+				accurateTrackBounce: true,
+				webvisor: true
+			});
+			saveAnswer();
+		}
+		// Нажатие кнопки "Yes"
+		document.querySelector('#yes').addEventListener('click', function () {
+			initCounter();
+		});
+		// Нажатие кнопки "No"
+		document.querySelector('#no').addEventListener('click', function () {
+			hideMessage();
+		});
+	</script>
+
+	<script src="js/main.js"></script>
+</body>
+
+</html>
+<!-- Copyright & Thanks -->
+<!-- https://icons8.com/ -->
+<!-- https://pages.github.com/ -->
+<!-- https://fonts.googleapis.com/ -->
+<!-- https://www.instagram.com/nino4ek9594/ -->
+<!--  -->
