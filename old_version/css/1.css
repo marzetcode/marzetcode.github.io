@@ -158,10 +158,10 @@ menu {
   list-style: none;
   padding-right: 2%;
   opacity: 0;
+  animation: show 10s 1;
+  animation-fill-mode: forwards;
   -webkit-animation: show 10s 1;
-          animation: show 10s 1;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 menu a {
@@ -176,10 +176,10 @@ h1 {
   padding-left: 10%;
   color: white;
   opacity: 0;
+  animation: show 10s 1;
+  animation-fill-mode: forwards;
   -webkit-animation: show 10s 1;
-          animation: show 10s 1;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes show {
@@ -211,6 +211,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  /*padding-bottom: 5%;*/
 }
 
 .about {
@@ -231,6 +232,47 @@ main {
   font-family: "Roboto";
   color: #1d0933;
   padding: 10%;
+}
+
+section {
+  /*margin: 3%;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.blockrow {
+  opacity: 0;
+}
+
+.main-block {
+  width: 20vw;
+  height: 35vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1d0933;
+  margin: 3%;
+  box-shadow: 0px 0px 20px 10px #1d0933;
+  -webkit-box-shadow: 0px 0px 20px 10px #1d0933;
+  -moz-box-shadow: 0px 0px 20px 10px #1d0933;
+}
+
+.main-block:hover {
+  -webkit-box-shadow: 0px 0px 10px 10px #1d0933;
+          box-shadow: 0px 0px 10px 10px #1d0933;
 }
 
 footer {
@@ -351,12 +393,31 @@ footer a {
   header {
     background-image: url("../img/main-980px.png");
   }
+  /*.about {
+		height: 100vh;
+	}*/
+  .main-block {
+    height: 25vw;
+    box-shadow: 0px 0px 10px 5px #1d0933;
+    -webkit-box-shadow: 0px 0px 10px 5px #1d0933;
+    -moz-box-shadow: 0px 0px 10px 5px #1d0933;
+  }
+  .main-block:hover {
+    -webkit-box-shadow: 0px 0px 5px 5px #1d0933;
+            box-shadow: 0px 0px 5px 5px #1d0933;
+  }
   footer {
     font-size: 3vw;
   }
   .footerContent {
     width: 50%;
     height: 40%;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .hiddenblock {
+    display: none;
   }
 }
 
@@ -367,6 +428,10 @@ footer a {
   header {
     background-image: url("../img/main-736px.png");
     background-size: cover;
+  }
+  .main-block {
+    width: 40vw;
+    height: 20vh;
   }
 }
 
@@ -384,6 +449,9 @@ footer a {
   header {
     background-image: url("../img/main-480px.png");
   }
+  /*footer {
+		height: 60vh;
+	}*/
 }
 
 @media screen and (max-width: 320px) {
@@ -394,11 +462,17 @@ footer a {
     background-image: url("../img/main-320px.png");
   }
   .about {
+    /*height: 100%;*/
     font-size: 4.5vw;
   }
   .about p {
     padding-top: 0;
     padding-bottom: 0;
+  }
+  .main-block {
+    margin: 5%;
+    width: 35vw;
+    height: 15vh;
   }
 }
 
@@ -418,7 +492,17 @@ footer a {
     font-size: 3vw;
     opacity: 1;
   }
+  .blockrow {
+    -webkit-column-break-inside: avoid;
+            break-inside: avoid;
+  }
+  .main-block {
+    height: 40vw;
+    -webkit-column-break-inside: avoid;
+            break-inside: avoid;
+  }
   footer {
+    /*height: 50vh;*/
     -webkit-column-break-inside: avoid;
             break-inside: avoid;
   }
