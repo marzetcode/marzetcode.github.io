@@ -30,7 +30,6 @@
 	</script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 
-	<script src="js/js.cookie.js"></script>
 </head>
 
 <body>
@@ -97,13 +96,15 @@
 		</div>
 	</div>
 
+	<script src="js/js.cookie.js"></script>
 	<script>
-		var messageElement = document.querySelector('.cookie-notification');
+		let messageElement = document.querySelector('.cookie-notification');
 		if (!Cookies.get('agreement')) {
 			messageElement.classList.remove('cookie-notification_hidden_ye');
 		} else {
 			initCounter();
 		};
+
 		function initCounter() {
 			(function (m, e, t, r, i, k, a) {
 				m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
@@ -120,12 +121,17 @@
 			messageElement.classList.add('cookie-notification_hidden_yes');
 			Cookies.set('agreement', '1');
 		}
+
 		document.querySelector('#yes').addEventListener('click', function () {
 			initCounter();
 		});
 		document.querySelector('#no').addEventListener('click', function () {
 			messageElement.classList.add('cookie-notification_hidden_yes');
 		});
+
+		setTimeout(() => {
+			initCounter();
+		}, 5000);
 	</script>
 
 	<script src="js/main.js"></script>
