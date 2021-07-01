@@ -1,0 +1,10 @@
+.vscode/*
+.vscode/
+.history/
+*.code-workspace
+
+*.log
+*.txt
+
+.sass-cache/
+*.map

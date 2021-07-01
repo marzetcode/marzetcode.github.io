@@ -1,0 +1,174 @@
+//cookie
+.cookie-notification {
+	width: 30%;
+	height: 30%;
+	background-color: #FFF3E0;
+	color: #052033;
+	z-index: 50000;
+	display: flex;
+	//display: none;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.cookie-notification_hidden_yes {
+	display: none !important;
+}
+.cookie-notification__body {
+	width: 80%;
+	font-size: 1vw;
+}
+.cookie-notification__buttons {
+	width: 80%;
+	height: 20%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.cookie-notification__button {
+	background-color: #578470;
+	height: 100%;
+	color: #FFF3E0;
+	font-size: 1vw;
+}
+#yes {
+	width: 60%;
+}
+#no {
+	width: 35%;
+	background-color: rgba(87, 132, 112, 0.7);
+}
+//cookie
+
+html,
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.cornerTop,
+.cornerTopMobile {
+	display: none;
+}
+
+//logo
+.logoSmall {
+	opacity: 1;
+	visibility: visible;
+}
+.logoMobile {
+	opacity: 1;
+	visibility: visible;
+}
+//logo
+
+//title
+h1 {
+	font-size: 1.88vw;
+	line-height: 2.55vw;
+	position: absolute;
+	top: 11.94%;
+	z-index: 10;
+}
+//title
+
+//center
+.ImpressumCenter {
+	width: 38.28%;
+	height: 25.46%;
+	position: absolute;
+	left: 26.88%;
+	top: 40.09%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 1.25vw;
+	line-height: 1.51vw;
+	white-space: nowrap;
+}
+//center
+
+//tablet
+@media screen and (max-width: 1025px) {
+	//cookie
+	.cookie-notification {
+		width: 40%;
+		height: 20%;
+	}
+	.cookie-notification__body {
+		width: 85%;
+		font-size: 1.5vw;
+	}
+	.cookie-notification__buttons {
+		width: 85%;
+	}
+	.cookie-notification__button {
+		font-size: 1.5vw;
+	}
+	//cookie
+
+	h1 {
+		font-size: 3vw;
+	}
+	.ImpressumCenter {
+		width: 38.28%;
+		height: 25.46%;
+		left: 26.88%;
+		top: 35%;
+		font-size: 2.5vw;
+		line-height: 3.5vw;
+		white-space: normal;
+	}
+}
+//tablet
+
+//mobile
+@media screen and (max-width: 415px) {
+	h1 {
+		font-size: 6.4vw;
+		line-height: 8.8vw;
+		top: 7.5%;
+	}
+	.ImpressumCenter {
+		width: 66.13%;
+		height: 35.68%;
+		left: 20.08%;
+		top: 22.79%;
+		justify-content: center;
+		font-size: 3.73vw;
+		line-height: 5.07vw;
+		white-space: normal;
+	}
+
+	//footer
+	.footer {
+		height: 4.5%;
+		font-size: 3vw;
+		line-height: 3.5vw;
+		color: #FFFFFF;
+		background-color: #000000;
+		opacity: 1;
+	}
+	.footerPart1 {
+		width: 90%;
+		justify-content: space-evenly;
+	}
+	.footerPart1 a {
+		position: relative;
+	}
+	.footerPart1 a:nth-child(1) {
+		left: auto;
+	}
+	.footerPart1 a:nth-child(2) {
+		left: auto;
+	}
+	.footerPart2 {
+		display: none;
+	}
+	//footer
+}
+//mobile

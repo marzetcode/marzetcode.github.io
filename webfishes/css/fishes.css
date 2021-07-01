@@ -1,0 +1,471 @@
+/*fish1*/
+.fish1 {
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	transform: scale(1);
+}
+.f1 {
+	background: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+	height: 20px;
+	width: 90px;
+	overflow: hidden;
+	border-radius: 50px;
+	position: absolute;
+	top: 20px;
+}
+.fin1_1 {
+	position: absolute;
+	border-radius: 100% 32% 100% 0%;
+	background: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+	height: 20px;
+	width: 20px;
+	top: 8px;
+	left: 30px;
+}
+.fin1_2 {
+	position: relative;
+	border-radius: 100% 32% 100% 0%;
+	background: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+	height: 15px;
+	width: 20px;
+	left: 80px;
+	top: 15px;
+}
+.fin1_2::after {
+	content: '';
+	position: absolute;
+	border-radius: 100% 32% 100% 0%;
+	background: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+	height: 14px;
+	width: 19px;
+	top: 15px;
+	left: 3px;
+	transform: rotate(45deg);
+}
+.e1 {
+	position: relative;
+	background: white;
+	border-radius: 100%;
+	height: 9px;
+	width: 9px;
+	left: 8px;
+	top: 5px;
+}
+.e1::after {
+	content: '';
+	position: absolute;
+	background: black;
+	border-radius: 100%;
+	height: 5px;
+	width: 5px;
+	left: 2.3px;
+	top: 1.8px;
+}
+.nose1 {
+	position: absolute;
+	border-radius: 100%;
+	background: black;
+	height: 3px;
+	width: 3px;
+	left: 2px;
+}
+/*fish1*/
+
+/*fish2*/
+.fish2 {
+	position: absolute;
+	top: 10%;
+	left: 30%;
+	transform: scale(1);
+}
+.f2 {
+	background: rgb(248, 237, 235);
+	background: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+	position: absolute;
+	overflow: hidden;
+	height: 70px;
+	width: 90px;
+	border-radius: 100%;
+}
+.e2 {
+	position: relative;
+	background: white;
+	border-radius: 100%;
+	height: 19px;
+	width: 19px;
+	left: 18px;
+	top: 15px;
+}
+.e2::after {
+	content: '';
+	position: absolute;
+	background: black;
+	border-radius: 100%;
+	height: 12px;
+	width: 12px;
+	left: 3.6px;
+	top: 3.6px;
+}
+.nose2 {
+	position: absolute;
+	border-radius: 100%;
+	background: black;
+	height: 4px;
+	width: 4px;
+	left: 6px;
+	top: 35px;
+}
+.fin2 {
+	position: relative;
+	border-radius: 100% 32% 100% 0%;
+	background: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+	height: 20px;
+	width: 30px;
+	left: 80px;
+	top: 35px;
+}
+.fin2::before {
+	content: '';
+	position: absolute;
+	border-radius: 100% 32% 100% 0%;
+	background: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+	height: 20px;
+	width: 30px;
+	top: 15px;
+	left: 0px;
+	transform: rotate(20deg);
+}
+.fin2::after {
+	content: '';
+	position: absolute;
+	border-radius: 100% 32% 100% 0%;
+	background: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+	height: 20px;
+	width: 25px;
+	top: 30px;
+	transform: rotate(45deg);
+}
+/*fish2*/
+
+/*fish3*/
+.fish3 {
+	position: absolute;
+	top: 15%;
+	left: -5%;
+	transform: scale(1);
+}
+.f3 {
+	background: linear-gradient(-225deg, #69eacb 0%, #eaccf8 48%, #6654f1 100%);
+	position: absolute;
+	overflow: hidden;
+	height: 50px;
+	width: 130px;
+	left: 60px;
+	border-radius: 100%;
+}
+/*.e6 {*/
+.e3 {
+	position: relative;
+	background: white;
+	border-radius: 100%;
+	height: 15px;
+	width: 15px;
+	left: 162px;
+	top: 15px;
+}
+/*.e6::after {*/
+.e3::after {
+	content: '';
+	position: absolute;
+	background: black;
+	border-radius: 100%;
+	height: 8px;
+	width: 8px;
+	left: 3.6px;
+	top: 3.6px;
+}
+.nose3 {
+	position: absolute;
+	border-radius: 100%;
+	background: black;
+	height: 4px;
+	width: 4px;
+	left: 178px;
+	top: 45px;
+}
+.fin3_1 {
+	position: relative;
+	border-radius: 100% 32% 100% 0%;
+	background: linear-gradient(-225deg, #69eacb 0%, #eaccf8 48%, #6654f1 100%);
+	height: 20px;
+	width: 20px;
+	left: 48px;
+	top: 43px;
+	transform: rotate(220deg);
+}
+.fin3_1::after {
+	content: '';
+	position: absolute;
+	border-radius: 100% 32% 100% 0%;
+	background: linear-gradient(-225deg, #69eacb 0%, #eaccf8 48%, #6654f1 100%);
+	height: 20px;
+	width: 20px;
+	left: 10px;
+	top: 11px;
+	transform: rotate(12deg);
+}
+.fin3_2 {
+	position: absolute;
+	border-radius: 100% 0% 100% 32%;
+	background: linear-gradient(-225deg, #69eacb 0%, #eaccf8 48%, #6654f1 100%);
+	height: 20px;
+	width: 30px;
+	top: 65px;
+	left: 110px;
+	transform: rotate(12deg);
+}
+/*fish3*/
+
+/*fish4*/
+.fish4 {
+	position: absolute;
+	top: 25%;
+	left: 0%;
+	transform: scale(1);
+}
+.f4 {
+	background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+	position: absolute;
+	overflow: hidden;
+	height: 50px;
+	width: 130px;
+	left: 60px;
+	border-radius: 85% 100% 100% 85%;
+}
+.e4 {
+	position: relative;
+	background: white;
+	border-radius: 100%;
+	height: 15px;
+	width: 15px;
+	left: 98px;
+	top: 15px;
+}
+.e4::after {
+	content: '';
+	position: absolute;
+	background: black;
+	border-radius: 100%;
+	height: 8px;
+	width: 8px;
+	left: 3.6px;
+	top: 3.6px;
+}
+.nose4 {
+	position: absolute;
+	border-radius: 100%;
+	background: black;
+	height: 4px;
+	width: 4px;
+	left: 118px;
+	top: 25px;
+}
+.fin4_1 {
+	position: relative;
+	border-radius: 100% 32% 100% 0%;
+	background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+	height: 10px;
+	width: 20px;
+	left: 45px;
+	top: 36px;
+	transform: rotate(180deg);
+}
+.fin4_1::before {
+	content: '';
+	position: absolute;
+	border-radius: 100% 32% 100% 0%;
+	background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+	height: 10px;
+	width: 20px;
+	top: 7px;
+	transform: rotate(20deg);
+}
+.fin4_1::after {
+	content: '';
+	position: absolute;
+	border-radius: 100% 32% 100% 0%;
+	background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+	height: 10px;
+	width: 20px;
+	left: 0px;
+	top: 15px;
+	transform: rotate(35deg);
+}
+.fin4_2 {
+	position: absolute;
+	border-radius: 100% 32% 100% 0%;
+	background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+	height: 24px;
+	width: 30px;
+	left: 100px;
+	top: -5px;
+	transform: rotate(230deg);
+}
+/*fish4*/
+
+/*fish5*/
+.fish5 {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	transform: scale(1);
+}
+
+.f5 {
+	background: linear-gradient(to top, #50cc7f 0%, #f5d100 100%);
+	position: absolute;
+	overflow: hidden;
+	height: 60px;
+	width: 80px;
+	left: 60px;
+	border-radius: 100%;
+}
+.e5 {
+	position: relative;
+	background: white;
+	border-radius: 100%;
+	height: 15px;
+	width: 15px;
+	left: 108px;
+	top: 15px;
+}
+.e5::after {
+	content: '';
+	position: absolute;
+	background: black;
+	border-radius: 100%;
+	height: 8px;
+	width: 8px;
+	left: 3.6px;
+	top: 3.6px;
+}
+.nose5 {
+	position: absolute;
+	border-radius: 100%;
+	background: black;
+	height: 4px;
+	width: 4px;
+	left: 128px;
+	top: 45px;
+}
+.fin5 {
+	position: relative;
+	border-radius: 100% 32% 100% 0%;
+	background: linear-gradient(to top, #50cc7f 0%, #f5d100 100%);
+	height: 20px;
+	width: 20px;
+	left: 48px;
+	top: 40px;
+	transform: rotate(220deg);
+}
+.fin5::before {
+	content: '';
+	position: absolute;
+	border-radius: 100% 32% 100% 0%;
+	background: linear-gradient(to top, #50cc7f 0%, #f5d100 100%);
+	height: 15px;
+	width: 15px;
+	top: -8px;
+	left: -5px;
+	transform: rotate(-20deg);
+}
+.fin5::after {
+	content: '';
+	position: absolute;
+	border-radius: 100% 32% 100% 0%;
+	background: linear-gradient(to top, #50cc7f 0%, #f5d100 100%);
+	height: 10px;
+	width: 20px;
+	left: 10px;
+	top: 11px;
+	transform: rotate(-15deg);
+}
+/*fish5*/
+
+/*fish6*/
+.fish6 {
+	position: absolute;
+	top: 20%;
+	left: 5%;
+	transform: scale(1);
+}
+.f6 {
+	background: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+	position: absolute;
+	overflow: hidden;
+	height: 40px;
+	width: 120px;
+	left: 60px;
+	border-radius: 85% 100% 100% 85%;
+}
+.e6 {
+	position: relative;
+	background: white;
+	border-radius: 100%;
+	height: 15px;
+	width: 15px;
+	left: 88px;
+	top: 10px;
+}
+.e6::after {
+	content: '';
+	position: absolute;
+	background: black;
+	border-radius: 100%;
+	height: 8px;
+	width: 8px;
+	left: 3.6px;
+	top: 3.6px;
+}
+.nose6 {
+	position: absolute;
+	border-radius: 100%;
+	background: black;
+	height: 4px;
+	width: 4px;
+	left: 110px;
+	top: 20px;
+}
+.fin6 {
+	position: relative;
+	border-radius: 100% 32% 100% 0%;
+	background: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+	height: 20px;
+	width: 20px;
+	left: 45px;
+	top: 36px;
+	transform: rotate(180deg);
+}
+.fin6::before {
+	content: '';
+	position: absolute;
+	border-radius: 100% 32% 100% 0%;
+	background: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+	height: 20px;
+	width: 20px;
+	top: 10px;
+	transform: rotate(85deg);
+}
+.fin6::after {
+	content: '';
+	position: absolute;
+	border-radius: 100% 32% 100% 0%;
+	background: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+	height: 24px;
+	width: 20px;
+	left: -60px;
+	top: 23px;
+	transform: rotate(85deg);
+}
+/*fish6*/
