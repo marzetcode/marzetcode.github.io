@@ -68,8 +68,8 @@ body {
 }
 .prev,
 .next {
-	width: 4vw;
-	height: 4vw;
+	width: 8vw;
+	height: 8vw;
 	position: absolute;
 	z-index: 10000;
 	background-image: url(img/arrow.png);
