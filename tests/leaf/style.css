@@ -1,0 +1,238 @@
+* {
+	margin: 0;
+	padding: 0;
+	background-repeat: no-repeat;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	background-color: #FFFFFF;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.preloader {
+	display: block;
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #FFFFFF url(bars.svg) center center no-repeat;
+	background-size: 50px;
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 1s, visibility 1s;
+}
+.preloaderHidden {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.container {
+	width: 30vw;
+	height: 50vw;
+	background-color: #FFFFFF;
+	position: absolute;
+}
+
+.swiper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFFFFF;
+}
+.swiper-wrapper {
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.prev,
+.next {
+	width: 4vw;
+	height: 4vw;
+	position: absolute;
+	z-index: 10000;
+	background-image: url(img/arrow.png);
+	background-size: contain;
+	background-position: center;
+	user-select: none;
+}
+.prev {
+	left: 10%;
+	display: none;
+}
+.next {
+	right: 10%;
+	transform: scaleX(-1);
+}
+
+.slide1 {
+	background-image: url(img/bg.jpg);
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+.leaf1,
+.leaf2,
+.leaf3,
+.leaf4,
+.leaf5,
+.leaf6 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 10;
+	background-size: 100% 100%;
+	background-position: center;
+	animation-iteration-count: infinite;
+	animation-fill-mode: both;
+}
+
+.leaf1 {
+	background-image: url(img/1.png);
+	transform-origin: 50% 0%;
+	animation-name: leaf1;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+}
+@keyframes leaf1 {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(1deg);
+	}
+	75% {
+		transform: rotate(-1deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.leaf2 {
+	background-image: url(img/2.png);
+	transform-origin: 50% 50%;
+	animation-name: leaf2;
+	animation-duration: 4s;
+	animation-timing-function: ease;
+}
+@keyframes leaf2 {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(-1deg);
+	}
+	75% {
+		transform: rotate(1deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.leaf3 {
+	background-image: url(img/3.png);
+	transform-origin: 50% 50%;
+	animation-name: leaf3;
+	animation-duration: 4s;
+	animation-timing-function: ease-out;
+}
+@keyframes leaf3 {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(2deg);
+	}
+	75% {
+		transform: rotate(-1deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.leaf4 {
+	background-image: url(img/4.png);
+	transform-origin: 100% 100%;
+	animation-name: leaf4;
+	animation-duration: 4s;
+	animation-timing-function: ease-in;
+}
+@keyframes leaf4 {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(-1deg);
+	}
+	75% {
+		transform: rotate(1deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.slide1 .logo {
+	width: 48%;
+	height: 10%;
+	position: absolute;
+	z-index: 1000000;
+	top: 4%;
+	background-color: white;
+	/* background-image: url(img/logo1.png);
+	background-size: contain;
+	background-position: center; */
+}
+
+.slide2 {
+	background: grey;
+}
+.slide2 .logo {
+	width: 48%;
+	height: 10%;
+	position: absolute;
+	top: 4%;
+	background-color: black;
+	/* background-image: url(img/logo2.png);
+	background-size: contain;
+	background-position: center; */
+}
+
+.slide3 {
+	background: lightgrey;
+}
+.slide3 .logo {
+	width: 48%;
+	height: 10%;
+	position: absolute;
+	top: 4%;
+	background-color: black;
+	/* background-image: url(img/logo2.png);
+	background-size: contain;
+	background-position: center; */
+}
