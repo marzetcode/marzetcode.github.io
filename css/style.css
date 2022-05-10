@@ -92,6 +92,7 @@ body {
   background-color: #d3aa0c;
   text-decoration: none;
   font-size: 1.5vw;
+  cursor: url(../img/cursor.png), auto;
   /* overflow-x: hidden; doesn't work with window.pageYOffset*/
   /* custom scroll bar for firefox*/
   scrollbar-width: thin;
