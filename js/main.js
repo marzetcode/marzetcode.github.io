@@ -1,5 +1,5 @@
 //parallax
-const paralax = document.getElementById('parallax');
+const paralax = document.querySelector('.parallax');
 //console.log(paralax.style);
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -12,3 +12,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //hidden horizontal scrollbar because css overflow-x: hidden doesn't work with window.pageYOffset
 document.documentElement.style.overflowX = 'hidden';
+
+
+let hv = document.querySelector('.hv');
+document.addEventListener('click', function(event) {
+	let posX = event.pageX;
+	let posY = event.pageY;
+	// console.log(posX);
+
+	hv.style.left = posX + 'px';
+	hv.style.top = posY + 'px';
+});
+
+console.log(hv.style);
