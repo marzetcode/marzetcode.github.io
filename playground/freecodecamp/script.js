@@ -152,4 +152,28 @@ function sumAll(arr) {
 	}
 	return sum
 };
-console.log(sumAll([10, 5]));
+// console.log(sumAll([10, 5]));
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function diffArray(arr1, arr2) {
+	const newArr = [];
+	arr1.concat(arr2).forEach(item => {
+		if ((arr1.includes(item) && !arr2.includes(item)) || (!arr1.includes(item) && arr2.includes(item))) {
+			newArr.push(item)
+		}
+	})
+	return newArr;
+};
+
+// console.log(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]));
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function destroyer(arr, ...vals) {
+	return arr.filter(item => !vals.includes(item));
+}
+
+console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3));
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
