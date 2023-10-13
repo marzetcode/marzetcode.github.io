@@ -1,5 +1,6 @@
 .vscode/*
 .vscode/
+node_modules/
 *.code-workspace
 *.fig
 *.map
